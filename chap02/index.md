@@ -11,35 +11,35 @@
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/02/)
-3.  对齐输出[1]
+3.  对齐输出[[1](http://noi.openjudge.cn)]
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/03/)
-4.  输出保留3位小数的浮点数[1]
+4.  输出保留3位小数的浮点数[[1](http://noi.openjudge.cn)]
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/04/)
-5.  输出保留12位小数的浮点数[1]
+5.  输出保留12位小数的浮点数[[1](http://noi.openjudge.cn)]
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/05/)
-6.  空格分隔输出[1]
+6.  空格分隔输出[[1](http://noi.openjudge.cn)]
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/06/)
-7.  输出浮点数[1]
+7.  输出浮点数[[1](http://noi.openjudge.cn)]
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/07/)
-8.  字符三角形[1]
+8.  字符三角形[[1](http://noi.openjudge.cn)]
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/08/)
-9.  字符菱形[1]
+9.  字符菱形[[1](http://noi.openjudge.cn)]
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/09/)
-10. 超级玛丽游戏[1]
+10. 超级玛丽游戏[[1](http://noi.openjudge.cn)]
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/10/)
