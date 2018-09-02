@@ -2,12 +2,12 @@
 
 ## 题目列表
 
-1.  Hello, World!<sup>[1]</sup>
+1.  Hello, World![1]
     -[试题](Q0201.md)
     -[代码1](https://github.com/daweizh/cpp/blob/master/chap02/C0201-1.cpp)
     -[代码2](https://github.com/daweizh/cpp/blob/master/chap02/C0201-2.cpp)
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/01/)
-2.  输出第二个整数<sup>[1]</sup>
+2.  输出第二个整数[1]
     -[试题]()
     -[代码]()
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/02/)
