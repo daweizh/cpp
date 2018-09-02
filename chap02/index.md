@@ -1,3 +1,5 @@
+[返回首页](../)
+
 ## 02.输入输出
 
 1.  Hello, World![[1](http://noi.openjudge.cn)]
@@ -47,8 +49,6 @@
 ## 题目出处
 
 1. NOI在线题库,[http://noi.openjudge.cn](http://noi.openjudge.cn)
-
-[返回首页](../)
 
 ## 微信订阅号
 
