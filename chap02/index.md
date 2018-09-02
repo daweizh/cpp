@@ -1,5 +1,3 @@
-[返回首页](../)
-
 ## CPP02.输入输出
 
 1.  Hello, World![[1](http://noi.openjudge.cn)]
@@ -60,4 +58,6 @@
 ![欢迎关注“随话录”订阅号](../assets/me/img/shl8.jpg)
 ![欢迎关注“西山征途”订阅号](../assets/me/img/xszt8.jpg)
 
+----------
 
+[返回首页](../)
