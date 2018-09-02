@@ -1,4 +1,4 @@
-## CPP02.输入输出
+## 第02章 输入输出
 
 1.  Hello, World![[1](http://noi.openjudge.cn)]
     -[试题](Q0201.md)
@@ -44,7 +44,7 @@
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/10/)
 
 
-## 题目出处
+## 参考链接
 
 1. NOI在线题库,[http://noi.openjudge.cn](http://noi.openjudge.cn)
 
