@@ -1,6 +1,6 @@
 [返回首页](../)
 
-## 02.输入输出
+## CPP02.输入输出
 
 1.  Hello, World![[1](http://noi.openjudge.cn)]
     -[试题](Q0201.md)
