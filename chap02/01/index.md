@@ -8,7 +8,7 @@
 
 书写程序主入口函数框架
 
-~~~
+~~~cpp
 int main() {
 
     return 0;
@@ -21,7 +21,7 @@ int main() {
 
 增加输入输出功能
 
-~~~
+~~~cpp
 #include <iostream>
     
 int main() {
@@ -34,7 +34,7 @@ int main() {
 
 用另一种方法说Hello, World!
 
-~~~
+~~~cpp
 #include <iostream>
     
 int main(){
@@ -47,7 +47,7 @@ int main(){
 
 简化`std`前缀
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
     
