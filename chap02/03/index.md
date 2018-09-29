@@ -6,15 +6,71 @@
 
 ## step1
 
+写程序入口主要函数。
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    return 0;
+}
+~~~
 
 ## step2
 
+命名变量并赋予合适的类型。
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b,c;
+
+    return 0;
+}
+~~~
 
 ## step3
 
+从键盘读取输入数据到对应变量。
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b,c;
+
+    cin >> a >> b >> c;
+
+    return 0;
+}
+~~~
 
 ## step4
 
+根据题意要求输出答案内容。
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b,c;
+
+    cin >> a >> b >> c;
+    printf("%8d %8d %8d",a,b,c);
+
+    return 0;
+}
+~~~
+
+## step5
+
+`printf("%8d %8d %8d",a,b,c);`？
 
 ## w. 微信订阅号
 

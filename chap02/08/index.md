@@ -6,14 +6,65 @@
 
 ## step1
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    return 0;
+}
+~~~
 
 ## step2
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char c;
+    
+    return 0;
+}
+~~~
 
 ## step3
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char c;
+
+    cin >> c;
+
+    return 0;
+}
+~~~
 
 ## step4
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char c;
+
+    cin >> c;
+    cout << "  " << c << endl;
+    cout << " " << c<<c<<c << endl;
+    cout << c<<c<<c<<c<<c<< endl;
+    
+    return 0;
+}
+~~~
+
+## step5
+
+`main`?
 
 
 ## w. 微信订阅号

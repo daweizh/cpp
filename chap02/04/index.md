@@ -6,14 +6,71 @@
 
 ## step1
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    return 0;
+}
+~~~
 
 ## step2
+
+定义变量和类型。
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a;
+
+    return 0;
+}
+~~~
 
 
 ## step3
 
+读取输入数据。
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a;
+
+    cin >> a ;
+
+    return 0;
+}
+~~~
 
 ## step4
+
+按问题要求格式化输出答案内容。
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a;
+
+    cin >> a ;
+    printf("%.3f",a);
+
+    return 0;
+}
+~~~
+
+## step5
+
+`float`?
+
 
 
 ## w. 微信订阅号

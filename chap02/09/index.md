@@ -6,14 +6,107 @@
 
 ## step1
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char c;
+
+    cin >> c;
+    cout << "  " << c << endl;
+    cout << " " << c<<c<<c << endl;
+    cout << c<<c<<c<<c<<c<< endl;
+    cout << " " << c<<c<<c << endl;
+    cout << "  " << c << endl;
+
+    return 0;
+}
+~~~
 
 ## step2
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char c;
+
+    cin >> c;
+    cout << "  " << c << endl;
+    cout << " " << c<<c<<c << endl;
+    cout << c<<c<<c<<c<<c<< endl;
+    cout << " " << c<<c<<c << endl;
+    cout << "  " << c << endl;
+
+    return 0;
+}
+~~~
 
 ## step3
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char c;
+
+    cin >> c;
+    cout << "  " << c << endl;
+    cout << " " << c<<c<<c << endl;
+    cout << c<<c<<c<<c<<c<< endl;
+    cout << " " << c<<c<<c << endl;
+    cout << "  " << c << endl;
+
+    return 0;
+}
+~~~
+
 
 ## step4
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char c;
+
+    cin >> c;
+    cout << "  " << c << endl;
+    cout << " " << c<<c<<c << endl;
+    cout << c<<c<<c<<c<<c<< endl;
+    cout << " " << c<<c<<c << endl;
+    cout << "  " << c << endl;
+
+    return 0;
+}
+~~~
+
+## step5
+
+~~~
+#include <iostream>
+
+int main() {
+    char ch;
+
+    scanf("%c", &ch);
+    printf("  %c\n",ch);
+    printf(" %c%c%c\n",ch,ch,ch);
+    printf("%c%c%c%c%c\n",ch,ch,ch,ch,ch);
+    printf(" %c%c%c\n",ch,ch,ch);
+    printf("  %c\n",ch);
+
+    return 0;
+}
+~~~
+
+## step6
+
+`cin`?
 
 
 ## w. 微信订阅号

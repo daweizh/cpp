@@ -6,14 +6,73 @@
 
 ## step1
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    return 0;
+}
+~~~
 
 ## step2
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char a;
+    int b;
+    float c;
+    double d;
+    
+    return 0;
+}
+~~~
 
 
 ## step3
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char a;
+    int b;
+    float c;
+    double d;
+    
+    cin >> a >> b >> c >> d;
+
+    return 0;
+}
+~~~
 
 ## step4
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    char a;
+    int b;
+    float c;
+    double d;
+    
+    cin >> a >> b >> c >> d;
+    printf("%c %d %f %f",a,b,c,d);
+
+    return 0;
+}
+~~~
+
+## step5
+
+`char`?
 
 
 ## w. 微信订阅号

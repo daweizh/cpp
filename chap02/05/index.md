@@ -6,14 +6,63 @@
 
 ## step1
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    return 0;
+}
+~~~
 
 ## step2
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a;
+
+    return 0;
+}
+~~~
 
 ## step3
 
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a;
+
+    cin >> a ;
+
+    return 0;
+}
+~~~
 
 ## step4
+
+~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a;
+
+    cin >> a ;
+    printf("%.12f",a);
+
+    return 0;
+}
+~~~
+
+## step5
+
+`double`?
 
 
 ## w. 微信订阅号
