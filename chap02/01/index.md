@@ -8,7 +8,7 @@
 
 书写程序主入口函数框架
 
-~~~
+~~~cpp
 int main() {
 
     return 0;
@@ -21,7 +21,7 @@ int main() {
 
 增加输入输出功能
 
-~~~
+~~~cpp
 #include <iostream>
     
 int main() {
@@ -34,7 +34,7 @@ int main() {
 
 用另一种方法说Hello, World!
 
-~~~
+~~~cpp
 #include <iostream>
     
 int main(){
@@ -47,7 +47,7 @@ int main(){
 
 简化`std`前缀
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
     
@@ -66,7 +66,7 @@ I/O 库头文件。
 分别对应于标准输入流、标准输出流、非缓冲标准错误流和缓冲标准错误流。
 
 1. cin
-    ~~~
+    ~~~cpp
     #include <iostream>
     using namespace std;
     
@@ -80,7 +80,7 @@ I/O 库头文件。
     } 
     ~~~
 2. cout
-    ~~~
+    ~~~cpp
     #include <iostream>
     using namespace std;
     
@@ -92,7 +92,7 @@ I/O 库头文件。
     }
     ~~~
 3. cerr
-    ~~~
+    ~~~cpp
     #include <iostream>
     using namespace std;
     
@@ -104,7 +104,7 @@ I/O 库头文件。
     }
     ~~~
 4. clog
-    ~~~
+    ~~~cpp
     #include <iostream>
     using namespace std;
     
@@ -121,7 +121,7 @@ I/O 库头文件。
 做点练习。
 
 1. 用cout输出一行输入的信息
-    ~~~
+    ~~~cpp
     #include <iostream>
     using namespace std;
     
@@ -136,7 +136,7 @@ I/O 库头文件。
     }
     ~~~
 2. 用cerr输出一行输入的信息
-    ~~~
+    ~~~cpp
     #include <iostream>
     using namespace std;
     
@@ -151,7 +151,7 @@ I/O 库头文件。
     }
     ~~~
 3. 用clog输出一行输入的信息
-    ~~~
+    ~~~cpp
     #include <iostream>
     using namespace std;
     
