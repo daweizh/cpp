@@ -1,8 +1,8 @@
-# A02.02 
+# A02.04 输出保留3位小数的浮点数
 
-- 张大为
-- 辽宁师范大学计算机与信息技术学院@大连
-- [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/)  QQ:1243605845
+- 张大为 QQ:1243605845 @大连
+- 辽宁师范大学计算机与信息技术学院
+- [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
 ## step1
 
