@@ -8,7 +8,7 @@
 
 书写程序主入口函数框架
 
-~~~cpp
+~~~
 int main() {
 
     return 0;
@@ -21,7 +21,7 @@ int main() {
 
 增加输入输出功能
 
-~~~cpp
+~~~
 #include <iostream>
     
 int main() {
@@ -34,7 +34,7 @@ int main() {
 
 用另一种方法说Hello, World!
 
-~~~cpp
+~~~
 #include <iostream>
     
 int main(){
@@ -47,7 +47,7 @@ int main(){
 
 简化`std`前缀
 
-~~~cpp
+~~~
 #include <iostream>
 using namespace std;
     
@@ -56,6 +56,116 @@ int main(){
     return 0;
 }
 ~~~
+
+## step5 
+
+`<iostream>`?
+
+I/O 库头文件。
+该文件定义了 cin、cout、cerr 和 clog 对象，
+分别对应于标准输入流、标准输出流、非缓冲标准错误流和缓冲标准错误流。
+
+1. cin
+    ~~~
+    #include <iostream>
+    using namespace std;
+    
+    int main(){
+        char str[200];
+        
+        cin >> str;
+        cout << str << endl;
+        
+        return 0;
+    } 
+    ~~~
+2. cout
+    ~~~
+    #include <iostream>
+    using namespace std;
+    
+    int main(){
+        
+        cout << "Example for cout." << endl;
+        
+        return 0;
+    }
+    ~~~
+3. cerr
+    ~~~
+    #include <iostream>
+    using namespace std;
+    
+    int main(){
+        
+        cerr << "Example for cerr." << endl;
+        
+        return 0;
+    }
+    ~~~
+4. clog
+    ~~~
+    #include <iostream>
+    using namespace std;
+    
+    int main(){
+        
+        clog << "Example for clog." << endl;
+        
+        return 0;
+    }
+    ~~~
+
+## step6
+
+做点练习。
+
+1. 用cout输出一行输入的信息
+    ~~~
+    #include <iostream>
+    using namespace std;
+    
+    int main(){
+        char str[200];
+        
+        cout << "Please type some words for cout message:";
+        cin.getline(str,200);   
+        clog << "cout message: " << str << endl;
+        
+        return 0;
+    }
+    ~~~
+2. 用cerr输出一行输入的信息
+    ~~~
+    #include <iostream>
+    using namespace std;
+    
+    int main(){
+        char str[200];
+        
+        cout << "Please type some words for cerr message:";
+        cin.getline(str,200);   
+        clog << "cerr message: " << str << endl;
+        
+        return 0;
+    }
+    ~~~
+3. 用clog输出一行输入的信息
+    ~~~
+    #include <iostream>
+    using namespace std;
+    
+    int main(){
+        char str[200];
+        
+        cout << "Please type some words for clog message:";
+        cin.getline(str,200);   
+        clog << "clog message: " << str << endl;
+        
+        return 0;
+    }
+    ~~~
+
 
 
 ## w. 微信订阅号
