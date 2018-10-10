@@ -6,20 +6,68 @@
 
 ## step1
 
-书写程序主入口函数框架
+可以通过以下方式在**Dev-C++ IDE**中新建源码文件：
+
+1. 通过工具**按钮**新建源码文件   
+	![](new1.png)
+2. 通过**文件**菜单新建源码文件   
+	![](new2.png)
+3. 通过**Ctrl+n**新建源码文件   
+
+出现如下图**未命名1**文件编辑区，**未命名**表示没存盘。
+
+![](new3.png)
+
+输入一行代码
 
 ~~~cpp
-int main() {
-
-    return 0;
-}
+#include <iostream> 
 ~~~
 
-在**Dev Cpp**中，按**F9**编译，按**F11**编译执行。
+文件标题前出现**[\*]**表示文件有改动，且没存盘，如下图所示
+
+![](new4.png)
+
+可以通过以下方式保存文件：
+
+1. 通过工具**按钮**保存文件   
+	![](new6.png)
+2. 通过**文件**菜单保存文件   
+	![](new5.png)
+3. 通过**Ctrl+s**保存文件
+	
+第一次保存文件会出现如下对话框让你选择**文件保存目录**和输入**文件名**，如下图所示
+![](new7.png)
+
+选择保存路径为**x:/idea/cpp/chap02/01**, 输入文件名为**program1.cpp** ， 点击**保存**按钮，当前编辑区标题变为**program1.cpp** ，并且没有**[\*]**号出现。
+
+![](new8.png)
+
+正在修改中的程序文件应随时按**Ctrl+s**保存！
 
 ## step2
 
-增加输入输出功能
+书写程序主入口函数框架
+
+~~~cpp
+#include <iostream> 
+
+int main(){
+	
+	return 0;
+}
+~~~
+
+按**Ctrl+s**保存，按**F9**编译，按**F11**编译执行，出现如下窗口表明程序执行成功。
+
+![](cmd1.png)
+
+按键盘上任意一个键，该窗口消失。
+
+
+## step3
+
+增加代码行`std::cout << "Hello, World!" << std::endl;`，输出“Hello, World!”。
 
 ~~~cpp
 #include <iostream>
@@ -30,22 +78,15 @@ int main() {
 }
 ~~~
 
-## step3
+按**Ctrl+s**保存，按**F11**编译执行，出现如下窗口表明程序执行成功。
 
-用另一种方法说Hello, World!
+![](cmd2.png)
 
-~~~cpp
-#include <iostream>
-    
-int main(){
-    printf("Hello, World!");
-    return 0;
-}
-~~~
+按键盘上任意一个键，该窗口消失。
 
 ## step4
 
-简化`std`前缀
+增加代码行`using namespace std;`，简化`std`前缀
 
 ~~~cpp
 #include <iostream>
@@ -59,113 +100,44 @@ int main(){
 
 ## step5 
 
-`<iostream>`?
+把"Hello, World!"换成如下内容试试：
 
-I/O 库头文件。
-该文件定义了 cin、cout、cerr 和 clog 对象，
-分别对应于标准输入流、标准输出流、非缓冲标准错误流和缓冲标准错误流。
+1. 1+2
+	~~~cpp
+    cout << 1+2 << endl;
+	~~~
+2. 3*3
+	~~~cpp
+    cout << 3*3 << endl;
+	~~~
+3. 4-3
+	~~~cpp
+    cout << 4-3 << endl;
+	~~~
+4. 4/2
+	~~~cpp
+    cout << 4/2 << endl;
+	~~~
 
-1. cin
-    ~~~cpp
-    #include <iostream>
-    using namespace std;
+把上述4行都写上怎样？
+
+~~~cpp
+#include <iostream>
+using namespace std;
     
-    int main(){
-        char str[200];
-        
-        cin >> str;
-        cout << str << endl;
-        
-        return 0;
-    } 
-    ~~~
-2. cout
-    ~~~cpp
-    #include <iostream>
-    using namespace std;
-    
-    int main(){
-        
-        cout << "Example for cout." << endl;
-        
-        return 0;
-    }
-    ~~~
-3. cerr
-    ~~~cpp
-    #include <iostream>
-    using namespace std;
-    
-    int main(){
-        
-        cerr << "Example for cerr." << endl;
-        
-        return 0;
-    }
-    ~~~
-4. clog
-    ~~~cpp
-    #include <iostream>
-    using namespace std;
-    
-    int main(){
-        
-        clog << "Example for clog." << endl;
-        
-        return 0;
-    }
-    ~~~
+int main(){
+    cout << "Hello, World!" << endl;
+    cout << 1+2 << endl;
+    cout << 3*3 << endl;
+    cout << 4-3 << endl;
+    cout << 4/2 << endl;
+    return 0;
+}
+~~~
 
 ## step6
 
-做点练习。
-
-1. 用cout输出一行输入的信息
-    ~~~cpp
-    #include <iostream>
-    using namespace std;
-    
-    int main(){
-        char str[200];
-        
-        cout << "Please type some words for cout message:";
-        cin.getline(str,200);   
-        clog << "cout message: " << str << endl;
-        
-        return 0;
-    }
-    ~~~
-2. 用cerr输出一行输入的信息
-    ~~~cpp
-    #include <iostream>
-    using namespace std;
-    
-    int main(){
-        char str[200];
-        
-        cout << "Please type some words for cerr message:";
-        cin.getline(str,200);   
-        clog << "cerr message: " << str << endl;
-        
-        return 0;
-    }
-    ~~~
-3. 用clog输出一行输入的信息
-    ~~~cpp
-    #include <iostream>
-    using namespace std;
-    
-    int main(){
-        char str[200];
-        
-        cout << "Please type some words for clog message:";
-        cin.getline(str,200);   
-        clog << "clog message: " << str << endl;
-        
-        return 0;
-    }
-    ~~~
-
+自己想想再让计算机输出点什么？
 
 
 ## w. 微信订阅号
