@@ -2,7 +2,7 @@
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
-- [https://daweizh.github.io/noip/](https://daweizh.github.io/noip/)  
+- [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/)  
 
 
 ## step1 进入《编程基础实践》课程资源空间
