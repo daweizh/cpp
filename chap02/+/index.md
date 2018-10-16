@@ -1,4 +1,4 @@
-# A02.02 输出第二个整数
+# A02.01 Hello, World!
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,67 +6,61 @@
 
 ## step1
 
-写主程序框架。
+书写程序主入口函数框架
 
 ~~~cpp
-#include <iostream>
-using namespace std;
-    
-int main(){
-    
+int main() {
+
     return 0;
 }
 ~~~
 
+在**Dev Cpp**中，按**F9**编译，按**F11**编译执行。
+
 ## step2
 
-定义变量类型和名称。
+增加输入输出功能
 
 ~~~cpp
 #include <iostream>
-using namespace std;
     
-int main(){
-    int a,b,c;
-    
+int main() {
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
 ~~~
 
 ## step3
 
-从键盘读数据到变量。
+用另一种方法说Hello, World!
 
 ~~~cpp
 #include <iostream>
-using namespace std;
     
 int main(){
-    int a,b,c;
-    
-    cin >> a >> b >> c;
-    
+    printf("Hello, World!");
     return 0;
 }
 ~~~
 
 ## step4
 
-根据问题要求输出答题结果。
+简化`std`前缀
 
 ~~~cpp
 #include <iostream>
 using namespace std;
     
 int main(){
-    int a,b,c;
-    
-    cin >> a >> b >> c;
-    cout << b << endl;
-    
+    cout << "Hello, World!" << endl;
     return 0;
 }
 ~~~
+
+## step5 
+
+
+
 
 ## w. 微信订阅号
 
