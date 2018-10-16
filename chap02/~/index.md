@@ -1,72 +1,19 @@
-# A02.01 Hello, World!
+# Chap02.需要了解的
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
-
-书写程序主入口函数框架
-
-~~~cpp
-int main() {
-
-    return 0;
-}
-~~~
-
-在**Dev Cpp**中，按**F9**编译，按**F11**编译执行。
-
-## step2
-
-增加输入输出功能
-
-~~~cpp
-#include <iostream>
-    
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
-}
-~~~
-
-## step3
-
-用另一种方法说Hello, World!
-
-~~~cpp
-#include <iostream>
-    
-int main(){
-    printf("Hello, World!");
-    return 0;
-}
-~~~
-
-## step4
-
-简化`std`前缀
-
-~~~cpp
-#include <iostream>
-using namespace std;
-    
-int main(){
-    cout << "Hello, World!" << endl;
-    return 0;
-}
-~~~
-
-## step5 
-
-`<iostream>`?
+## 2.1 `<iostream>`
 
 I/O 库头文件。
 该文件定义了 cin、cout、cerr 和 clog 对象，
 分别对应于标准输入流、标准输出流、非缓冲标准错误流和缓冲标准错误流。
 
+example:
+
 1. cin
-    ~~~cpp
+    ~~~
     #include <iostream>
     using namespace std;
     
@@ -80,7 +27,7 @@ I/O 库头文件。
     } 
     ~~~
 2. cout
-    ~~~cpp
+    ~~~
     #include <iostream>
     using namespace std;
     
@@ -92,7 +39,7 @@ I/O 库头文件。
     }
     ~~~
 3. cerr
-    ~~~cpp
+    ~~~
     #include <iostream>
     using namespace std;
     
@@ -104,7 +51,7 @@ I/O 库头文件。
     }
     ~~~
 4. clog
-    ~~~cpp
+    ~~~
     #include <iostream>
     using namespace std;
     
@@ -116,12 +63,10 @@ I/O 库头文件。
     }
     ~~~
 
-## step6
-
-做点练习。
+exercise:
 
 1. 用cout输出一行输入的信息
-    ~~~cpp
+    ~~~
     #include <iostream>
     using namespace std;
     
@@ -136,7 +81,7 @@ I/O 库头文件。
     }
     ~~~
 2. 用cerr输出一行输入的信息
-    ~~~cpp
+    ~~~
     #include <iostream>
     using namespace std;
     
@@ -151,7 +96,7 @@ I/O 库头文件。
     }
     ~~~
 3. 用clog输出一行输入的信息
-    ~~~cpp
+    ~~~
     #include <iostream>
     using namespace std;
     
@@ -165,6 +110,23 @@ I/O 库头文件。
         return 0;
     }
     ~~~
+
+## 2.2 基本数据类型
+
+## step5
+
+`int`？
+
+|类型|关键字|字节|范围|
+|---|---|---|---|
+|布尔型|bool|1|0~1|
+|字符型|char|1|-128~127 或者 0~255|
+|短整型|short|4|-32768~32767|
+|整型|int|4|-2147483648~2147483647|
+|长整型|long|8|-9223372036854775808~9223372036854775807|
+|浮点型|float|4|1.17549e-38~3.40282e+38|
+|双浮点型|double|8|2.22507e-308~1.79769e+308|
+|无类型|void|||
 
 
 
