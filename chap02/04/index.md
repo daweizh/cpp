@@ -6,7 +6,7 @@
 
 ## step1
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -18,9 +18,7 @@ int main() {
 
 ## step2
 
-定义变量和类型。
-
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -34,9 +32,7 @@ int main() {
 
 ## step3
 
-读取输入数据。
-
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -51,9 +47,7 @@ int main() {
 
 ## step4
 
-按问题要求格式化输出答案内容。
-
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -66,12 +60,6 @@ int main() {
     return 0;
 }
 ~~~
-
-## step5
-
-`float`?
-
-
 
 ## w. 微信订阅号
 

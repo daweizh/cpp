@@ -8,7 +8,7 @@
 
 写程序入口主要函数。
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -22,7 +22,7 @@ int main() {
 
 命名变量并赋予合适的类型。
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -37,7 +37,7 @@ int main() {
 
 从键盘读取输入数据到对应变量。
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -54,7 +54,7 @@ int main() {
 
 根据题意要求输出答案内容。
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -67,13 +67,6 @@ int main() {
     return 0;
 }
 ~~~
-
-## step5
-
-`printf("%8d %8d %8d",a,b,c);`？
-
-`printf()`是格式化输出函数,格式是`printf("<格式化字符串>", <参量表>)`。
-
 
 ## w. 微信订阅号
 

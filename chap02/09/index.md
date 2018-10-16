@@ -6,7 +6,7 @@
 
 ## step1
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -15,9 +15,9 @@ int main() {
 
     cin >> c;
     cout << "  " << c << endl;
-    cout << " " << c<<c<<c << endl;
-    cout << c<<c<<c<<c<<c<< endl;
-    cout << " " << c<<c<<c << endl;
+    cout << " " << c << c << c << endl;
+    cout << c << c << c << c << c << endl;
+    cout << " " << c << c << c << endl;
     cout << "  " << c << endl;
 
     return 0;
@@ -26,68 +26,7 @@ int main() {
 
 ## step2
 
-~~~
-#include <iostream>
-using namespace std;
-
-int main() {
-    char c;
-
-    cin >> c;
-    cout << "  " << c << endl;
-    cout << " " << c<<c<<c << endl;
-    cout << c<<c<<c<<c<<c<< endl;
-    cout << " " << c<<c<<c << endl;
-    cout << "  " << c << endl;
-
-    return 0;
-}
-~~~
-
-## step3
-
-~~~
-#include <iostream>
-using namespace std;
-
-int main() {
-    char c;
-
-    cin >> c;
-    cout << "  " << c << endl;
-    cout << " " << c<<c<<c << endl;
-    cout << c<<c<<c<<c<<c<< endl;
-    cout << " " << c<<c<<c << endl;
-    cout << "  " << c << endl;
-
-    return 0;
-}
-~~~
-
-
-## step4
-
-~~~
-#include <iostream>
-using namespace std;
-
-int main() {
-    char c;
-
-    cin >> c;
-    cout << "  " << c << endl;
-    cout << " " << c<<c<<c << endl;
-    cout << c<<c<<c<<c<<c<< endl;
-    cout << " " << c<<c<<c << endl;
-    cout << "  " << c << endl;
-
-    return 0;
-}
-~~~
-
-## step5
-
-~~~
+~~~cpp
 #include <iostream>
 
 int main() {
@@ -103,11 +42,6 @@ int main() {
     return 0;
 }
 ~~~
-
-## step6
-
-`cin`?
-
 
 ## w. 微信订阅号
 
