@@ -6,7 +6,7 @@
 
 ## step1
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -18,7 +18,7 @@ int main() {
 
 ## step2
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -29,10 +29,9 @@ int main() {
 }
 ~~~
 
-
 ## step3
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -47,7 +46,7 @@ int main() {
 
 ## step4
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -64,21 +63,7 @@ int main() {
 }
 ~~~
 
-## step5
-
-`\n`?
-
-|符号|意义|符号|意义|
-|---|---|---|---|
-|\a|铃声(提醒)|\b|Backspace|
-|\f|换页|\n|换行|
-|\r|回车|\t|水平制表符|
-|\v|垂直制表符|\’|单引号|
-|\”|双引号|\\|反斜杠|
-
-
 ## w. 微信订阅号
-
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
