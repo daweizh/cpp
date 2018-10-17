@@ -51,6 +51,10 @@
     -[代码](https://github.com/daweizh/cpp/blob/master/chap02/10/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/10/)
 
+## s.小结
+
+1. [本章总结](~/)
+
 
 ## r.参考链接
 
