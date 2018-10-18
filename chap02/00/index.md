@@ -165,7 +165,7 @@ C++的算术类型
 
 测试数据类型
 
-~~~
+~~~cpp
 #include<iostream>  
 #include<string>  
 #include <limits>  
@@ -299,7 +299,7 @@ C++程序需要通过I/O库函数与外界通信、交流。
 
 测试代码
 
-~~~
+~~~cpp
 #include<stdio.h>
 #include<string.h>
 
@@ -378,7 +378,7 @@ ASCII 表：
 
 测试代码
 
-~~~
+~~~cpp
 #include <stdio.h>
 
 int main () {
