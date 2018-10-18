@@ -40,7 +40,7 @@ C++语言本身没有定义输入输出语句，需要包含额外的用于输�
         char str[200];
         
         std::cin >> str;
-        std::cout << str << endl;
+        std::cout << str << std::endl;
         
         return 0;
     } 
@@ -51,7 +51,7 @@ C++语言本身没有定义输入输出语句，需要包含额外的用于输�
     
     int main(){
         
-        std::cout << "Example for cout." << endl;
+        std::cout << "Example for cout." << std::endl;
         
         return 0;
     }
@@ -62,7 +62,7 @@ C++语言本身没有定义输入输出语句，需要包含额外的用于输�
     
     int main(){
         
-        std::cerr << "Example for cerr." << endl;
+        std::cerr << "Example for cerr." << std::endl;
         
         return 0;
     }
@@ -73,7 +73,7 @@ C++语言本身没有定义输入输出语句，需要包含额外的用于输�
     
     int main(){
         
-        std::clog << "Example for clog." << endl;
+        std::clog << "Example for clog." << std::endl;
         
         return 0;
     }
@@ -120,7 +120,7 @@ C++语言本身没有定义输入输出语句，需要包含额外的用于输�
 
 int main(){
     
-    std::cout << "Example for cout." << endl;
+    std::cout << "Example for cout." << std::endl;
     
     return 0;
 }
@@ -162,6 +162,69 @@ C++的算术类型
 |float      |单精度浮点型|32位|+/- 3.4e +/- 38|38|
 |double     |双精度浮点型|64位|+/- 1.7e +/- 308|308|
 |long double|扩展精度浮点型|128位|+/- 1.2e +/- 4932|4932|
+
+测试数据类型
+
+~~~
+#include<iostream>  
+#include<string>  
+#include <limits>  
+using namespace std;  
+  
+int main(){  
+    cout << "type: \t\t" << "************size**************"<< endl;  
+    cout << "bool: \t\t" << "bytes：" << sizeof(bool);  
+    cout << "\tmax：" << (numeric_limits<bool>::max)();  
+    cout << "\t\t\t\tmin：" << (numeric_limits<bool>::min)() << endl;  
+    cout << "char: \t\t" << "bytes：" << sizeof(char);  
+    cout << "\tmax：" << (numeric_limits<char>::max)();  
+    cout << "\t\t\t\tmin：" << (numeric_limits<char>::min)() << endl;  
+    cout << "signed char: \t" << "bytes：" << sizeof(signed char);  
+    cout << "\tmax：" << (numeric_limits<signed char>::max)();  
+    cout << "\t\t\t\tmin：" << (numeric_limits<signed char>::min)() << endl;  
+    cout << "unsigned char:\t" << "bytes：" << sizeof(unsigned char);  
+    cout << "\tmax：" << (numeric_limits<unsigned char>::max)();  
+    cout << "\t\t\t\tmin：" << (numeric_limits<unsigned char>::min)() << endl;  
+    cout << "wchar_t: \t" << "bytes：" << sizeof(wchar_t);  
+    cout << "\tmax：" << (numeric_limits<wchar_t>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<wchar_t>::min)() << endl;  
+    cout << "short: \t\t" << "bytes：" << sizeof(short);  
+    cout << "\tmax：" << (numeric_limits<short>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<short>::min)() << endl;  
+    cout << "int: \t\t" << "bytes：" << sizeof(int);  
+    cout << "\tmax：" << (numeric_limits<int>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<int>::min)() << endl;  
+    cout << "unsigned int: \t" << "bytes：" << sizeof(unsigned);  
+    cout << "\tmax：" << (numeric_limits<unsigned>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<unsigned>::min)() << endl;  
+    cout << "long: \t\t" << "bytes：" << sizeof(long);  
+    cout << "\tmax：" << (numeric_limits<long>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<long>::min)() << endl;  
+    cout << "unsigned long: \t" << "bytes：" << sizeof(unsigned long);  
+    cout << "\tmax：" << (numeric_limits<unsigned long>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<unsigned long>::min)() << endl;  
+    cout << "long long: \t" << "bytes：" << sizeof(long long);  
+    cout << "\tmax：" << (numeric_limits<long long>::max)();  
+    cout << "\tmin：" << (numeric_limits<long long>::min)() << endl;  
+    cout << "double: \t" << "bytes：" << sizeof(double);  
+    cout << "\tmax：" << (numeric_limits<double>::max)();  
+    cout << "\t\tmin：" << (numeric_limits<double>::min)() << endl;  
+    cout << "long double: \t" << "bytes：" << sizeof(long double);  
+    cout << "\tmax：" << (numeric_limits<long double>::max)();  
+    cout << "\t\tmin：" << (numeric_limits<long double>::min)() << endl;  
+    cout << "float: \t\t" << "bytes：" << sizeof(float);  
+    cout << "\tmax：" << (numeric_limits<float>::max)();  
+    cout << "\t\tmin：" << (numeric_limits<float>::min)() << endl;  
+    cout << "size_t: \t" << "bytes：" << sizeof(size_t);  
+    cout << "\tmax：" << (numeric_limits<size_t>::max)();  
+    cout << "\tmin：" << (numeric_limits<size_t>::min)() << endl;  
+    cout << "string: \t" << "bytes：" << sizeof(string) ;  
+    cout << "\tmax：" << (numeric_limits<string>::max)();
+    cout << "\t\t\t\tmin：" << (numeric_limits<string>::min)() << endl;  
+    cout << "type: \t\t" << "************size**************"<< endl;  
+    return 0;  
+}
+~~~
 
 ## 2.6 printf
 
@@ -234,6 +297,40 @@ C++程序需要通过I/O库函数与外界通信、交流。
 ||与 g 或 G 一起使用时，结果与使用 e 或 E 时相同，但是尾部的零不会被移除。
 |0	|在指定填充 padding 的数字左边放置零（0），而不是空格（参见 width 子说明符）。
 
+测试代码
+
+~~~
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+    char c, s[20];
+    int a=1234;
+    float f=3.141592653589;
+    double x=0.12345678987654321;
+    strcpy(s , "Hello,Comrade");
+    c='\x41';
+    
+    printf("a=%d\n",a);       /*结果输出十进制整数a=1234*/
+    printf("a=%6d\n",a);      /*结果输出6位十进制数a=1234*/
+    printf("a=%06d\n",a);     /*结果输出6位十进制数a=001234*/
+    printf("a=%2d\n",a);      /*a超过2位,按实际值输出a=1234*/
+    printf("f=%f\n",f);       /*输出浮点数f=3.141593*/
+    printf("f=%6.4f\n",f);    /*输出6位其中小数点后4位的浮点数f=3.1416*/
+    printf("x=%lf\n",x);      /*输出长浮点数x=0.123457*/
+    printf("x=%18.16lf\n",x); /*输出18位其中小数点后16位的长浮点数x=0.1234567898765432*/
+    printf("c=%c\n",c);       /*输出字符c=A*/
+    printf("c=%x\n",c);       /*输出字符的ASCII码值c=41*/
+    printf("s[]=%s\n",s);     /*输出数组字符串s[]=Hello,Comrade*/
+    printf("s[]=%6.9s\n",s);  /*输出最多9个字符的字符串s[]=Hello,Co*/
+    printf("s=%p\n",s);       /*输出数组字符串首字符地址s=FFBE*/
+
+    return 0;
+}
+
+~~~
+
+
 ## 2.7 ASCII
 
 ASCII 定义了 128 个字符:
@@ -278,6 +375,22 @@ ASCII 表：
 |29  |GS  |61  |=   |93  |]   |125 |}
 |30  |RS  |62  |>   |94  |^   |126 |`
 |31  |US  |63  |?   |95  |_   |127 |DEL
+
+测试代码
+
+~~~
+#include <stdio.h>
+
+int main () {
+    int ch;
+
+    for( ch = 75 ; ch <= 100; ch++ ) {
+        printf("ASCII value = %d, character = %c\n", ch , ch );
+    }
+
+    return 0;
+}
+~~~
 
 
 ## 2.8 转义字符
