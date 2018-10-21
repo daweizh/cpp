@@ -4,8 +4,18 @@
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
+## answer 
 
+~~~
+#include<iostream>
+using namespace std;
+
+int main(){
+    cout << sizeof("Hello, World!") << endl; 
+
+    return 0;
+}
+~~~
 
 
 ## w. 微信订阅号

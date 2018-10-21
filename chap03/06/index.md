@@ -4,8 +4,38 @@
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
+## answer1 
 
+~~~
+#include<iostream>
+using namespace std;
+
+int main(){
+    float f;
+
+    cin >> f;
+    int i = f;
+    cout << i << endl;
+    
+    return 0;
+}
+~~~
+
+## answer2 
+
+~~~
+#include<iostream>
+using namespace std;
+
+int main(){
+    float f;
+    
+    cin >> f;
+    cout << (int)f << endl;
+    
+    return 0;
+}
+~~~
 
 
 ## w. 微信订阅号

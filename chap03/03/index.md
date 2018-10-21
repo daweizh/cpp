@@ -4,7 +4,21 @@
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
+## answer 
+
+~~~
+#include<iostream>
+using namespace std;
+
+int main(){
+    bool b;
+    char c;
+    
+    cout << sizeof(b)<< " " << sizeof(c) << endl; 
+    
+    return 0;
+}
+~~~
 
 
 

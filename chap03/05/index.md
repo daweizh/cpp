@@ -4,8 +4,22 @@
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
+## answer 
 
+~~~
+#include<iostream>
+using namespace std;
+
+int main(){
+    double a = 1.000000001;
+    float b = a;
+    
+    cout << "F E" <<endl;
+    //printf("%.9f %.9f\n", a, b);
+
+    return 0;
+}
+~~~
 
 
 ## w. 微信订阅号
