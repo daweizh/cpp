@@ -6,7 +6,7 @@
 
 ## answer1 
 
-~~~
+~~~cpp
 #include<iostream>
 using namespace std;
 
@@ -23,7 +23,7 @@ int main(){
 
 ## answer2 
 
-~~~
+~~~cpp
 #include<iostream>
 using namespace std;
 
