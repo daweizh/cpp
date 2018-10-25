@@ -4,7 +4,7 @@
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## answer 
+## a. 参考代码 
 
 ~~~cpp
 #include<iostream>
@@ -19,7 +19,6 @@ int main(){
     return 0;
 }
 ~~~
-
 
 ## w. 微信订阅号
 

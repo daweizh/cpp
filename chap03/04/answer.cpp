@@ -6,7 +6,6 @@ int main(){
     short b = a;
     
     cout << "D C" <<endl;
-    //printf("%d %d\n", a, b);
     
     return 0;
 }
