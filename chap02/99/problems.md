@@ -6,7 +6,7 @@
 2. 把20张画平均分给7个同学，每人分得几张，还剩几张？
 3. 阅读下列程序和运行结果，学习表达式的书写格式。
 了解程序中表达式运算先后顺序和数学习惯的数学表达式运算先后顺序的关系。
-    ~~~
+    ~~~cpp
     #include <iostream>
     using namespace std;
     
@@ -23,7 +23,7 @@
 5. 将8000秒表示成小时分钟秒的形式。
 6. 4个工人3天铺了90m<sup>2</sup>地板砖，照这样计算，5个工人6天能铺多少平方米地板砖？
 7. 分析下面的程序运行结果。
-    ~~~
+    ~~~cpp
     #include <iostream>
     using namespace std;
     
@@ -37,7 +37,7 @@
     ~~~
 8. 阅读下列程序和运行结果，理解实数运算和整数运算的区别，
 理解`fixed << setprescision(8)`格式函数的作用。
-    ~~~
+    ~~~cpp
     #include <iostream>
     #include <iomanip>
     using namespace std;

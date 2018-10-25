@@ -53,11 +53,11 @@
 
 ## s. 小结
 
-- 本章总结-[总结](00/)-[代码](https://github.com/daweizh/cpp/blob/master/chap02/00/)
+- 本章总结-[内容归纳](00/)-[参考代码](https://github.com/daweizh/cpp/blob/master/chap02/00/)
 
 ## p. 习题
 
-- 本章习题[2]-[题目](99/problems.md)
+- 本章习题[2]-[练习题目](99/problems.md)
   -[参考答案](99/)
   -[参考代码](https://github.com/daweizh/cpp/blob/master/chap02/99/)
 
