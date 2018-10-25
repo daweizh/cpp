@@ -51,16 +51,23 @@
     -[代码](https://github.com/daweizh/cpp/blob/master/chap02/10/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0101/10/)
 
-## s.小结
+## s. 小结
 
-1. [本章总结](00/)
+- 本章总结-[总结](00/)-[代码](https://github.com/daweizh/cpp/blob/master/chap02/00/)
+
+## p. 习题
+
+- 本章习题[2]-[题目](99/problems.md)
+  -[参考答案](99/)
+  -[参考代码](https://github.com/daweizh/cpp/blob/master/chap02/99/)
 
 
-## r.参考链接
+## r. 参考链接
 
 1. NOI在线题库,[http://noi.openjudge.cn](http://noi.openjudge.cn)
+2. CCF中学生计算机程序设计.入门篇，中国计算机学会，科学出版社。
 
-## w.微信订阅号
+## w. 微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
@@ -72,4 +79,4 @@
 
 ----------
 
-## b.[返回首页](../)
+## b. [返回首页](../)
