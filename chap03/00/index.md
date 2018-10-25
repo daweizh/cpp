@@ -1,146 +1,54 @@
-# Chap02.需要了解的
+# Chap03.需要了解的
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
 
-## 2.1 main
+## 3.1 基本概念
 
-每个C++程序都包含一到多个函数，但必须有一个函数叫`main`，如下：
+1. CCF=>China Computer Federation: 中国计算机协会
+2. NOI=>National Olympiad Informatics: 全国青少年信息学奥林匹克竞赛 （CCF1984年创办）
+3. CS=>Computer Science: 计算机科学
+4. NOIP=>National Olympiad in Informatics in Provinces:全国青少年信息学奥林匹克联赛
 
-~~~cpp
-int main(){
+> “计算机科学教育的核心是算法设计和编程，
+> 这要求学生面对一个给定的现实问题要能够找到一个正确和高效的办法（算法）
+> 并将其变成计算机能理解的语言（程序设计语言），
+> 进而让计算机计算出人们需要的结果来。”
 
-    return 0;
-}
-~~~
+#
 
-每个函数都包含四个部分：
+> “用计算机解题并不容易，因为将一个问题抽象并构造一个模型，
+> 需要一定的数学基础，还得理解计算机的特点，“指挥”计算机干活。
+> 这还涉及欲求解问题的“可计算性”，因为并不是任何问题都可以由计算机求解的。”
 
-1. 返回类型
-2. 函数名
-3. 圆括号括起来的参数列表（可以为空）
-4. 花括号括起来的函数体
+#
 
-## 2.2 iostream
+> “计算机也并不知道什么是“问题”，是人告诉计算机，如何按照一步一步的程序求解。
+> 这个过程，就会训练一个人求解问题的能力，相应地，
+> 其具备的让计算机做事的思维能力称之为“计算思维”（Computing Thinking）。”
 
-C++语言本身没有定义输入输出语句，需要包含额外的用于输入输出的`标准库`。
-`iostream`是C++的一个标准库。
-该文件定义了 cin、cout、cerr 和 clog 对象，
-分别对应于标准输入流、标准输出流、非缓冲标准错误流和缓冲标准错误流。
+#
 
-举例：
+> 我们必须知道如何让计算机做事，起码知道计算机是如何做事的，这就要求普及计算机科学教育。
 
-1. cin
-    ~~~cpp
-    #include <iostream>
-    
-    int main(){
-        char str[200];
-        
-        std::cin >> str;
-        std::cout << str << std::endl;
-        
-        return 0;
-    } 
-    ~~~
-2. cout
-    ~~~cpp
-    #include <iostream>
-    
-    int main(){
-        
-        std::cout << "Example for cout." << std::endl;
-        
-        return 0;
-    }
-    ~~~
-3. cerr
-    ~~~cpp
-    #include <iostream>
-    
-    int main(){
-        
-        std::cerr << "Example for cerr." << std::endl;
-        
-        return 0;
-    }
-    ~~~
-4. clog
-    ~~~cpp
-    #include <iostream>
-    
-    int main(){
-        
-        std::clog << "Example for clog." << std::endl;
-        
-        return 0;
-    }
-    ~~~
+#
 
-## 2.3 保留字
+> 在新经济形态中，计算机科学已不再是可选技能，而是同阅读、写作和算术一样的基础技能。
 
-|一|二|三|
-|---|---|---|
-|alignas        |export             |sizeof|
-|alignof        |extern             |static|
-|asm            |false              |static_assert|
-|auto           |float              |static_cast|
-|bool           |for                |struct|
-|break          |friend             |switch|
-|case           |goto               |template|
-|catch          |if                 |this|
-|char           |inline             |thread_local|
-|char16_t       |int                |throw|
-|char32_t       |long               |true|
-|class          |mutable            |try|
-|const          |namespace          |typedef|
-|constexpr      |new                |typeid|
-|const_cast     |noexcept           |typename|
-|continue       |nullptr            |union|
-|decltype       |operator           |unsigned|
-|default        |private            |using|
-|delete         |protected          |virtual|
-|do             |public             |void|
-|double         |register           |volatile|
-|dynamic_cast   |reinterpret_cast   |wchar_t|
-|else           |return             |while|
-|enum           |short              ||
-|explicit       |signed             ||
 
-## 2.4 namespace
+- 计算机是通过执行一个个程序来实现各种神奇的功能。
+- **程序**就是为实现特定目标或解决特定问题而用计算机语言编写的一系列指令序列。
+- **计算机语言**是人与计算机之间通信的语言。
+- 编程可以简单理解为程序员为解决特定问题，按照自己的思路，在遵循特定的计算机语言规则下编写程序的过程。
+- 在某种计算机语言环境下编写程序的过程，叫程序的编辑。
+- 对所编写程序进行解析的过程叫翻译，翻译分为两种，
+	- 一种叫解释，是计算机对程序的指令翻译一句执行一句
+	- 另一种叫编译，是计算机对程序的全部指令一次性全部翻译后，再让计算机执行的行为。
+- 高级语言程序要通过编译器才能运行得到结果。
 
-为了区分相同的名字使用`namespace`，在不同的`namespace`中可以使用相同的名字。
-
-可以用`using namespace std`声明后续代码使用`std`命名空间，如代码
-
-~~~cpp
-#include <iostream>
-
-int main(){
-    
-    std::cout << "Example for cout." << std::endl;
-    
-    return 0;
-}
-~~~
-
-中的`std`可以通过`using namespace std`省略掉。
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    
-    cout << "Example for cout." << endl;
-    
-    return 0;
-}
-~~~
-
-## 2.5 数据类型
+## 3.2 数据类型
 
 C++语言本身提供了一系列基本的数据类型包括算术类型和特殊的`void`类型两大类。
 算术类型又可以表示：字符，整数，布尔值和浮点数。
@@ -226,112 +134,8 @@ int main(){
 }
 ~~~
 
-## 2.6 printf
 
-C++程序需要通过I/O库函数与外界通信、交流。
-`int printf(const char *format,...)`发送格式化输出到标准输出`stdout`。
-如果成功，则返回写入的字符总数，否则返回一个负数。
-
-`printf()`函数的调用格式为：
-
-    printf("<格式化字符串>",<参量表>);
-
-
-
-`format`的格式是`%[flags][width][.precision][length]specifier`。
-
-**1.specifier**
-
-|specifier(格式字符)|意义|
-|---|---|
-|d   |以十进制形式输出带符号整数(正数不输出符号)
-|o   |以八进制形式输出无符号整数(不输出前缀0)
-|x,X |以十六进制形式输出无符号整数(不输出前缀Ox)
-|u   |以十进制形式输出无符号整数
-|f   |以小数形式输出单、双精度实数
-|e,E |以指数形式输出单、双精度实数
-|g,G |以%f或%e中较短的输出宽度输出单、双精度实数
-|c   |输出单个字符
-|s   |输出字符串
-|p   |输出指针地址
-|lu  |32位无符号整数
-|llu |64位无符号整数
-
-**2.length**
-
-|length(长度)|描述
-|---|---|
-|h|参数被解释为短整型或无符号短整型（仅适用于整数说明符：i、d、o、u、x 和 X）。
-|l|参数被解释为长整型或无符号长整型，适用于整数说明符（i、d、o、u、x 和 X）及说明符 c（表示一个宽字符）和 s（表示宽字符字符串）。
-|L|参数被解释为长双精度型（仅适用于浮点数说明符：e、E、f、g 和 G）。
-
-**3.precision**
-
-|.precision（精度）	|描述
-|---|---|
-|.number	|对于整数说明符（d、i、o、u、x、X）：precision 指定了要写入的数字的最小位数。如果写入的值短于该数，结果会用前导零来填充。如果写入的值长于该数，结果不会被截断。精度为 0 意味着不写入任何字符。
-||对于 e、E 和 f 说明符：要在小数点后输出的小数位数。
-||对于 g 和 G 说明符：要输出的最大有效位数。
-||对于 s: 要输出的最大字符数。默认情况下，所有字符都会被输出，直到遇到末尾的空字符。
-||对于 c 类型：没有任何影响。
-||当未指定任何精度时，默认为 1。如果指定时不带有一个显式值，则假定为 0。
-|.*	|精度在 format 字符串中未指定，但是会作为附加整数值参数放置于要被格式化的参数之前。
-
-**4.width**
-
-|width（宽度）	|描述
-|---|---|
-|(number)	|要输出的字符的最小数目。如果输出的值短于该数，结果会用空格填充。如果输出的值长于该数，结果不会被截断。
-|*	|宽度在format字符串中未指定，但是会作为附加整数值参数放置于要被格式化的参数之前。
-
-
-**5.flags**
-
-|flags（标识）	|描述
-|---|---|
-|-	|在给定的字段宽度内左对齐，默认是右对齐（参见 width 子说明符）。
-|+	|强制在结果之前显示加号或减号（+ 或 -），即正数前面会显示 + 号。默认情况下，只有负数前面会显示一个 - 号。
-|空格	|如果没有写入任何符号，则在该值前面插入一个空格。
-|#	|与 o、x 或 X 说明符一起使用时，非零值前面会分别显示 0、0x 或 0X。
-||与 e、E 和 f 一起使用时，会强制输出包含一个小数点，即使后边没有数字时也会显示小数点。默认情况下，如果后边没有数字时候，不会显示显示小数点。
-||与 g 或 G 一起使用时，结果与使用 e 或 E 时相同，但是尾部的零不会被移除。
-|0	|在指定填充 padding 的数字左边放置零（0），而不是空格（参见 width 子说明符）。
-
-测试代码
-
-~~~cpp
-#include<stdio.h>
-#include<string.h>
-
-int main(){
-    char c, s[20];
-    int a=1234;
-    float f=3.141592653589;
-    double x=0.12345678987654321;
-    strcpy(s , "Hello,Comrade");
-    c='\x41';
-    
-    printf("a=%d\n",a);       /*结果输出十进制整数a=1234*/
-    printf("a=%6d\n",a);      /*结果输出6位十进制数a=1234*/
-    printf("a=%06d\n",a);     /*结果输出6位十进制数a=001234*/
-    printf("a=%2d\n",a);      /*a超过2位,按实际值输出a=1234*/
-    printf("f=%f\n",f);       /*输出浮点数f=3.141593*/
-    printf("f=%6.4f\n",f);    /*输出6位其中小数点后4位的浮点数f=3.1416*/
-    printf("x=%lf\n",x);      /*输出长浮点数x=0.123457*/
-    printf("x=%18.16lf\n",x); /*输出18位其中小数点后16位的长浮点数x=0.1234567898765432*/
-    printf("c=%c\n",c);       /*输出字符c=A*/
-    printf("c=%x\n",c);       /*输出字符的ASCII码值c=41*/
-    printf("s[]=%s\n",s);     /*输出数组字符串s[]=Hello,Comrade*/
-    printf("s[]=%6.9s\n",s);  /*输出最多9个字符的字符串s[]=Hello,Co*/
-    printf("s=%p\n",s);       /*输出数组字符串首字符地址s=FFBE*/
-
-    return 0;
-}
-
-~~~
-
-
-## 2.7 ASCII
+## 3.3 ASCII
 
 ASCII 定义了 128 个字符:
 
@@ -393,28 +197,6 @@ int main () {
 ~~~
 
 
-## 2.8 转义字符
-
-所有的ASCII码都可以用“\”加数字（一般是8进制数字）来表示。
-而C++中定义了一些字母前加"\\"来表示常见的那些不能显示的ASCII字符，如\0,\t,\n等，
-就称为转义字符，因为后面的字符，都不是它本来的ASCII字符意思了。
-
-|转义字符 |意义|ASCII码值（十进制）
-|---|---|---|
-|\a|响铃(BEL)|007
-|\b|退格(BS) ，将当前位置移到前一列|008
-|\f|换页(FF)，将当前位置移到下页开头|012
-|\n|换行(LF) ，将当前位置移到下一行开头|010
-|\r|回车(CR) ，将当前位置移到本行开头|013
-|\t|水平制表(HT) （跳到下一个TAB位置）|009
-|\v|垂直制表(VT)|011
-|\\\\   |代表一个反斜线字符'\\'|092
-|\\'|代表一个单引号（撇号）字符|039
-|\\"|代表一个双引号字符|034
-|\?|代表一个问号  |063
-|\0|空字符(NULL)|000
-|\ddd|1到3位八进制数所代表的任意字符|三位八进制
-|\xhh|1到2位十六进制所代表的任意字符|二位十六进制
 
 
 ## w. 微信订阅号
