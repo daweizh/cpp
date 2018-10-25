@@ -6,7 +6,7 @@
 
 ## step1
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -18,7 +18,7 @@ int main() {
 
 ## step2
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -35,7 +35,7 @@ int main() {
 
 ## step3
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -53,7 +53,7 @@ int main() {
 
 ## step4
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
@@ -69,7 +69,6 @@ int main() {
     return 0;
 }
 ~~~
-
 
 ## w. 微信订阅号
 
