@@ -6,7 +6,7 @@
 
 ## a. 参考代码
 
-~~~
+~~~cpp
 #include <iostream>
 #include <cmath>
 using namespace std;
