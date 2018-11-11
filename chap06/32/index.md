@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.32 求分数序列和 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,20 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
+    int n;
+    double p=1,q=2,sum = 0,temp;
 
     cin >> n;
     for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+        sum = sum + q / p;
+        temp = q;
+        q = q + p;
+        p = temp;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
+    printf("%.4f",sum);
+        
     return 0;
-}
+} 
 ~~~
 
 

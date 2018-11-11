@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.26 统计满足条件的4位数个数 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,25 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
+    int n,a,sum=0;
+    int first,second,third,forth;
+    
     cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
-    }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
 
+    for(int i=0;i<n;i++){
+        cin >> a;
+        forth = a % 10;
+        third = (a - forth)/10 % 10;
+        second = (a-forth - third * 10)/100 % 10;
+        first = (a - forth - third*10 - second * 100)/1000;
+        if (forth - first - second - third > 0){
+            sum = sum + 1;
+        }
+    }
+    cout << sum << endl;
+    
     return 0;
-}
+} 
 ~~~
 
 

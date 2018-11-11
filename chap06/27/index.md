@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.27 级数求和
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,18 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    long K,n=0;
+    double sn = 0;
+    
+    cin >> K;
+    while(sn<=K){
+        n = n + 1;
+        sn = sn + 1.0d/n;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
+    cout << n << endl;
 
     return 0;
-}
+} 
 ~~~
 
 

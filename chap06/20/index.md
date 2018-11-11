@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.20 球弹跳高度的计算 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,19 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    double h,sum=0;
+    
+    cin >> h;
+    sum = h;
+    for(int i=1;i<10;i++){
+        sum = sum + h;
+        h = h / 2;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
+    cout << sum << endl;
+    cout << h/2 << endl;
+    
     return 0;
-}
+} 
 ~~~
 
 

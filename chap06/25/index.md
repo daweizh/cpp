@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.25 求特殊自然数 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,17 +11,21 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    int i,j,k;
+    
+    bool flag = false;
+    for(i=0;i<7;i++){
+        for(j=0;j<7;j++){
+            for(k=0;k<7;k++){
+                if (i*9*9+j*9+k==i+j*7+k*7*7 && (i!=0 || j!=0 || k!=0)){
+                    cout << i*9*9+j*9+k  << endl;
+                    cout << k << j << i << endl;
+                    cout << i << j << k << endl; 
+                }
+            }
+        }
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
+    
     return 0;
 }
 ~~~

@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.38 计算多项式的导函数 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,23 +6,25 @@
 
 ## a. 参考代码
 
-~~~cpp
+~~~
 #include <iostream>
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    int n,c[100];
+    
+    cin >> n ;
+    for(int i=n;i>=0;i--){
+        cin >> c[i];
+        c[i] = c[i] * i;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
 
-    return 0;
+    cout << c[n];
+    for(int i=n-1;i>0;i--)
+        cout << " " << c[i];
+    cout << endl;
+    
+    return 0;   
 }
 ~~~
 

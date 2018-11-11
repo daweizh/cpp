@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.45 金币 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,18 +11,20 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
+    long n,coin=1,sum=0;
 
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    cin >> n ;
+    int count = 1;
+    while(count <= n){
+        for(int j=1;j<=coin&&count <=n;j++){
+            sum = sum + coin;
+            count = count + 1;
+        }
+        coin = coin + 1;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
-    return 0;
+    cout << sum << endl;
+    
+    return 0;   
 }
 ~~~
 

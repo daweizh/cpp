@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.16 买房子
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,24 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
+    int i;
+    double N,K, M = 200;
+    
+    cin >> N >> K;
 
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    for (i=1;i<=20;i++){
+        if (N * i >= M)
+            break;
+        M = M * (1 + K/100);
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
+    
+    if(i<=20)   
+        printf("%d",i);
+    else
+        cout << "Impossible" << endl;
+            
     return 0;
-}
+} 
 ~~~
 
 

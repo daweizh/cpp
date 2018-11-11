@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.28 分离整数的各个数位 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,20 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
+    long long int n,r;
+    
     cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    while(n>0){
+        r = n % 10;
+        cout << r;
+        n = (n - r)/10;
+        if (n>0)
+            cout << " ";
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
+    cout << endl;
 
     return 0;
-}
+} 
 ~~~
 
 

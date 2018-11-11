@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.22 津津的储蓄计划 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,25 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
+    long p,a,r =0,sum=0;
 
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    for(int i=0;i<12;i++){
+        r = r + 300;
+        cin >> p;
+        r = r - p;
+        a = r/100;
+        sum = sum + a * 100;
+        r = r - a * 100;
+        if (r<0){
+            cout << "-" << i+1 << endl;
+            break;
+        }    
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
-    return 0;
-}
+    if (r>0)
+        cout << sum * 1.2 + r << endl;
+    
+    return 0;   
+} 
 ~~~
 
 

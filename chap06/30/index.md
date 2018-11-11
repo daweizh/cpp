@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.30 含k个3的数
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,24 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
-    }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
+    long m,k,sum=0;
+    
+    cin >> m >> k;
+    if (m % 19 ==0){
+        while(m!=0){
+            if (m % 10==3)
+                sum = sum + 1;
+            m = m / 10;
+        }
+        if (sum==k)
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }else
+        cout << "NO" << endl;
+    
     return 0;
-}
+} 
 ~~~
 
 

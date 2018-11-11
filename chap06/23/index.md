@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.23 药房管理
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,20 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    long m,n,a,sum=0;
+    
+    cin >> m >>n;
+    for(int i=0;i<n;i++){
+        cin >> a;
+        if (m -a >= 0)
+            m = m - a;
+        else
+            sum = sum + 1;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
-    return 0;
-}
+    cout << sum  << endl;
+    
+    return 0;   
+} 
 ~~~
 
 

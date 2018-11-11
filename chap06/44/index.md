@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.44 第n小的质数 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -8,21 +8,31 @@
 
 ~~~cpp
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
+    long n,c=2,i=3,j;
+    bool flag = false;
 
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
-    }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
-    return 0;
+    cin >> n ;
+    if (n==1) 
+        i = 2;
+    else 
+        while(c<n){
+            i = i + 2;
+            flag = true;
+            for(j=2;j<=sqrt(i);j++)
+                if (i % j==0){
+                    flag = false;
+                    break;
+                }
+            if(flag)
+                c = c + 1;
+        }
+    cout << i << endl;
+    
+    return 0;   
 }
 ~~~
 

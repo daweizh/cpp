@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.42 画矩形 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,18 +11,30 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    int h,w,fill;
+    char c;
+    
+    cin >> h >> w >> c >> fill ;
+    for (int i=0;i<w;i++) 
+        cout << c;
+    cout << endl;
+    
+    for (int i=0;i<h-2;i++){
+        cout << c;
+        for(int j=0;j<w-2;j++)
+            if (fill==0) 
+                cout << " ";
+            else
+                cout << c;
+        cout << c << endl;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
+    
+    for (int i=0;i<w;i++)
+        cout << c;
 
-    return 0;
+    cout << endl;
+    
+    return 0;   
 }
 ~~~
 

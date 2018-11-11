@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.37 雇佣兵 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,22 +6,23 @@
 
 ## a. 参考代码
 
-~~~cpp
+~~~
 #include <iostream>
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    int M,N,X;
+    
+    cin >> M >> N >> X ;
+    while(N <=M && X * N >=M){
+        if (M%N==0)
+            X = X - M / N;
+        else
+            X = X - M / N -1;
+        N = N + M/N;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
+    printf("%d",N);
+    
     return 0;
 }
 ~~~

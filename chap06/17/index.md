@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.17 菲波那契数列
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,17 +11,20 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
+    int k,first=1,second=1,fb;
+    
+    cin >> k;
 
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
-    }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
+    if (k > 2)
+        for (int i=3;i<=k;i++){
+            fb = first + second;
+            first = second;
+            second = fb;
+        }
+    else
+        fb = 1;
+    cout << fb << endl;
+            
     return 0;
 }
 ~~~

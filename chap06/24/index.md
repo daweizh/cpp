@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.24 正常血压
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,25 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
+    long n,a,b,sum=0,max=0;
+    
     cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    for(int i=0;i<n;i++){
+        cin >> a >> b;
+        if (a>=90 && a<=140 && b>=60 && b<=90){
+            sum = sum + 1;
+        }else{
+            if (sum > max)
+                max = sum;
+            sum = 0;
+        }
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
+    if (sum > max) 
+        max = sum;
+    cout << max  << endl;
+    
     return 0;
-}
+} 
 ~~~
 
 

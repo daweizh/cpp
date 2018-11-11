@@ -1,31 +1,44 @@
-# A05.07 奥运奖牌计数
+# A005.14 人口增长问题 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## a. 参考代码
+## a1. 参考代码
 
 ~~~cpp
 #include <iostream>
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
+    double x,n;
 
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    cin >> x >> n;
+    for(int i=0;i<n;i++){
+        x = x * (1+0.001);
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
+    printf("%.4f",x);
+            
     return 0;
 }
 ~~~
 
+## a2. 参考代码
+
+~~~cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double x,n;
+
+    cin >> x >> n;
+    printf("%.4f",x*pow((1+0.001),n));
+
+    return 0;
+}
+~~~
 
 ## w. 微信订阅号
 

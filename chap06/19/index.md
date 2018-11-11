@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.19 救援 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -8,22 +8,22 @@
 
 ~~~cpp
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
-
+    int n;
+    double a,b,c,t=0;
+    
     cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    for(int i=0;i<n;i++){
+        cin >> a >> b >> c;
+        t = t + sqrt(a*a+b*b) * 2 / 50 + 1.5 * c;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
-
-    return 0;
-}
+    printf("%.0f",ceil(t));
+    
+    return 0;   
+} 
 ~~~
 
 

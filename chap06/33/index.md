@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.33 计算分数加减表达式的值
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,19 +11,20 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
+    int n;
+    double sum = 0;
 
     cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    for (int i=1;i<=n;i++){
+        if(i%2==1)
+            sum = sum + 1.0d/i;
+        else
+            sum = sum - 1.0d/i;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
+    printf("%.4f",sum);
 
     return 0;
-}
+} 
 ~~~
 
 

@@ -1,4 +1,4 @@
-# A05.07 奥运奖牌计数
+# A05.35 求出e的值 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,16 +11,17 @@
 using namespace std;
 
 int main(){
-    int n,g,s,c,sg=0,ss=0,sc=0;
+    int n;
+    double e = 1,p;
 
     cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> g >> s >> c;
-        sg = sg + g;
-        ss = ss + s;
-        sc = sc + c; 
+    for (int i=1;i<=n;i++){
+        p = 1;
+        for(int j=1;j<=i;j++)
+            p = p * j;
+        e = e + 1/p;
     }
-    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
+    printf("%.10f",e);
 
     return 0;
 }
