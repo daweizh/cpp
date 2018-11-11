@@ -1,4 +1,4 @@
-## 05.输入输出
+## 05.循环控制
 
 1.  求平均年龄[[1](http://noi.openjudge.cn)]
     -[试题](01/question.md)

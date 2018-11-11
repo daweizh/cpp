@@ -6,7 +6,7 @@
 
 ## a. 参考代码
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
