@@ -1,9 +1,73 @@
-## 01.简介
+## 02.输入输出
 
-1. [教学资源云平台-编程基础实践](env/)
-2. [准备DevCpp编程环境](idea/)
+1.  Hello, World![[1](http://noi.openjudge.cn)]
+    -[试题](01/question.md)
+    -[题解](01/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/01/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/01/)
+2.  输出第二个整数[[1](http://noi.openjudge.cn)]
+    -[试题](02/question.md)
+    -[题解](02/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/02/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/02/)
+3.  对齐输出[[1](http://noi.openjudge.cn)]
+    -[试题](03/question.md)
+    -[题解](03/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/03/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/03/)
+4.  输出保留3位小数的浮点数[[1](http://noi.openjudge.cn)]
+    -[试题](04/question.md)
+    -[题解](04/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/04/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/04/)
+5.  输出保留12位小数的浮点数[[1](http://noi.openjudge.cn)]
+    -[试题](05/question.md)
+    -[题解](05/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/05/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/05/)
+6.  空格分隔输出[[1](http://noi.openjudge.cn)]
+    -[试题](06/question.md)
+    -[题解](06/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/06/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/06/)
+7.  输出浮点数[[1](http://noi.openjudge.cn)]
+    -[试题](07/question.md)
+    -[题解](07/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/07/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/07/)
+8.  字符三角形[[1](http://noi.openjudge.cn)]
+    -[试题](08/question.md)
+    -[题解](08/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/08/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/08/)
+9.  字符菱形[[1](http://noi.openjudge.cn)]
+    -[试题](09/question.md)
+    -[题解](09/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/09/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/09/)
+10. 超级玛丽游戏[[1](http://noi.openjudge.cn)]
+    -[试题](10/question.md)
+    -[题解](10/)
+    -[代码](https://github.com/daweizh/cpp/blob/master/chap01/10/)
+    -[NOI在线提交](http://noi.openjudge.cn/ch0101/10/)
 
-## w.微信订阅号
+## s. 小结
+
+- 本章总结-[内容归纳](00/)-[参考代码](https://github.com/daweizh/cpp/blob/master/chap01/00/)
+
+## p. 习题
+
+- 本章习题[2]-[练习题目](99/problems.md)
+  -[参考答案](99/)
+  -[参考代码](https://github.com/daweizh/cpp/blob/master/chap01/99/)
+
+
+## r. 参考链接
+
+1. NOI在线题库,[http://noi.openjudge.cn](http://noi.openjudge.cn)
+2. CCF中学生计算机程序设计.入门篇，中国计算机学会，科学出版社。
+
+## w. 微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
@@ -15,4 +79,4 @@
 
 ----------
 
-## b.[返回首页](../)
+## b. [返回首页](../)
