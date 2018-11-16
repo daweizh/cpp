@@ -1,11 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    float r1,r2;
+int main(){
+    int c1,c2;
 
-    cin >> r1 >> r2 ;
-    printf("%.2f",1/(1/r1+1/r2));
+    cin >> c1 >> c2;
 
+    string s = "0";
+    if ((c1<60 && c2>=60 )|| (c1>=60 && c2 <60))
+        s = "1";
+    cout << s << endl;
+    
     return 0;
 }

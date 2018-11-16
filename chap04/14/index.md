@@ -1,4 +1,4 @@
-# A03.14 大象喝水
+# A04.14 计算邮资
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,14 +11,20 @@
 #include <cmath>
 using namespace std;
 
-int main() {
-    double pi = 3.14159;
-    double h,r;
+int main(){
+    double w;
+    char c;
+    int f;
 
-    cin >> h >> r ;
-    double v = pi * r * r * h / 1000;
-    printf("%g", ceil(20/v) );
-
+    cin >> w >> c;
+    if (w <= 1000)
+        f = 8;
+    else
+        f = ceil((w-1000)/500)*4 + 8;
+    if (c=='y')
+        f = f + 5;
+    printf("%d",f);
+    
     return 0;
 }
 ~~~
@@ -28,7 +34,7 @@ int main() {
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
-3. 西山征途-关注大学生成长、学习和生活
+2. 西山征途-关注大学生成长、学习和生活
 
 ![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
 ![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)

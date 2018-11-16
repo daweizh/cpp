@@ -1,48 +1,37 @@
-# A03.06 甲流疫情死亡率
+# A04.06 判断是否为两位数
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## a1. 参考代码
+## a. 参考代码
 
 ~~~cpp
 #include <iostream>
-#include<iomanip>
 using namespace std;
 
-int main() {
-    double a,b;
+int main(){
+    int i;
 
-    cin >>a >> b ;
-    printf("%.3f%%",b*100/a);
+    cin >> i;
 
+    if (i>=10 && i<=99)
+        i = 1;
+    else
+        i = 0;      
+
+    cout << i << endl;
+    
     return 0;
 }
 ~~~
 
-## a2. 参考代码
-
-~~~cpp
-#include <iostream>
-#include<iomanip>
-using namespace std;
-
-int main() {
-    double a,b;
-
-    cin >>a >> b ;
-    cout << fixed << setprecision(3) << b * 100 / a << "%" << endl;
-
-    return 0;
-}
-~~~
 
 ## w. 微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
-3. 西山征途-关注大学生成长、学习和生活
+2. 西山征途-关注大学生成长、学习和生活
 
 ![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
 ![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)

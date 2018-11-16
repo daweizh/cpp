@@ -1,11 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int a1,a2,n;
-    
-    cin >> a1 >> a2 >> n;
-    printf("%d", a1 + (n-1) * (a2-a1));
+int main(){
+    int x,y;
 
+    cin >>x >> y;
+    string s = "no";
+    if (x<=1 && x>=-1 && y <=1 && y>=-1)
+        s = "yes";
+    cout << s << endl;
+    
     return 0;
 }

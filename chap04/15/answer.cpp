@@ -2,11 +2,16 @@
 #include <cmath>
 using namespace std;
 
-int main() {
-    double n,x,y;
+int main(){
+    int x,y,z;
 
-    cin >> n >> x >> y ;
-    printf("%g", n-ceil(y/x) );
-
+    cin >> x >> y >>z;
+    int max = x;
+    if (y > max)
+        max = y;
+    if (z>max)
+        max = z;
+    printf("%d",max);
+    
     return 0;
 }

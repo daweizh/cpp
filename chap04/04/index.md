@@ -1,47 +1,34 @@
-# A03.04 带余除法
+# A04.04 奇偶ASCII值判断
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## a1. 参考代码
+## a. 参考代码
 
 ~~~cpp
 #include <iostream>
 using namespace std;
 
-int main() {
-    int a,b,c;
+int main(){
+    char c=getchar();
 
-    cin >>a >> b ;
-    c = a / b;
-    cout << c << " " << a-c*b << endl;
+    string s = "NO";
+    if (c%2==1)
+        s = "YES";
 
+    cout << s << endl;
+    
     return 0;
 }
 ~~~
 
-## a2. 参考代码
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a,b;
-
-    cin >>a >> b ;
-    cout << a/b << " " << a % b << endl;
-
-    return 0;
-}
-~~~
 
 ## w. 微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
-3. 西山征途-关注大学生成长、学习和生活
+2. 西山征途-关注大学生成长、学习和生活
 
 ![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
 ![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)

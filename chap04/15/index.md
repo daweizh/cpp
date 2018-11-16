@@ -1,4 +1,4 @@
-# A03.15 苹果和虫子 
+# A04.15 最大数输出
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,21 +11,27 @@
 #include <cmath>
 using namespace std;
 
-int main() {
-    double n,x,y;
+int main(){
+    int x,y,z;
 
-    cin >> n >> x >> y ;
-    printf("%g", n-ceil(y/x) );
-
+    cin >> x >> y >>z;
+    int max = x;
+    if (y > max)
+        max = y;
+    if (z>max)
+        max = z;
+    printf("%d",max);
+    
     return 0;
 }
 ~~~
+
 
 ## w. 微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
-3. 西山征途-关注大学生成长、学习和生活
+2. 西山征途-关注大学生成长、学习和生活
 
 ![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
 ![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)

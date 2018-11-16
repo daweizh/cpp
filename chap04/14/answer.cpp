@@ -2,13 +2,19 @@
 #include <cmath>
 using namespace std;
 
-int main() {
-    double pi = 3.14159;
-    double h,r;
+int main(){
+    double w;
+    char c;
+    int f;
 
-    cin >> h >> r ;
-    double v = pi * r * r * h / 1000;
-    printf("%g", ceil(20/v) );
-
+    cin >> w >> c;
+    if (w <= 1000)
+        f = 8;
+    else
+        f = ceil((w-1000)/500)*4 + 8;
+    if (c=='y')
+        f = f + 5;
+    printf("%d",f);
+    
     return 0;
 }

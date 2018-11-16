@@ -1,4 +1,4 @@
-# A03.11 计算浮点数相除的余数
+# A04.11 晶晶赴约会
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -10,22 +10,26 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    double a,b;
+int main(){
+    int d;
 
-    cin >> a >> b ;
-    int c = (int)(a / b);
-    printf("%g", a - b*c);
+    cin >> d;
 
+    string s = "YES";
+    if (d==1 || d==3 || d == 5 )
+        s = "NO";
+    cout << s << endl;
+    
     return 0;
 }
 ~~~
+
 
 ## w. 微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
-3. 西山征途-关注大学生成长、学习和生活
+2. 西山征途-关注大学生成长、学习和生活
 
 ![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
 ![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)

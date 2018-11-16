@@ -1,4 +1,4 @@
-# A03.09 与圆相关的计算
+# A04.09 判断能否被3，5，7整除
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -10,16 +10,33 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    double pi = 3.14159;
-    double r;
+int main(){
+    int n;
 
-    cin >> r ;
-    printf("%.4f %.4f %.4f",2*r,2*pi*r,pi*r*r);
+    cin >> n;
 
+    string s = "n";
+    if (n % 3==0 && n % 5==0 && n % 7==0)
+        s = "3 5 7";
+    else if (n % 3==0 && n % 5==0)
+        s = "3 5";
+    else if (n % 3==0 && n % 7==0)
+        s = "3 7";
+    else if (n % 5==0 && n % 7==0)
+        s = "5 7";
+    else if (n % 3==0)
+        s = "3";
+    else if (n % 5==0)
+        s = "5";
+    else if (n % 7==0)
+        s = "7";
+
+    cout << s << endl;
+    
     return 0;
 }
 ~~~
+
 
 ## w. 微信订阅号
 

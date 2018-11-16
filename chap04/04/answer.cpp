@@ -2,12 +2,12 @@
 using namespace std;
 
 int main(){
-    int n;
+    char c=getchar();
 
-    cin >> n;
     string s = "NO";
-    if (n % 3==0 && n % 5==0)
+    if (c%2==1)
         s = "YES";
+
     cout << s << endl;
     
     return 0;

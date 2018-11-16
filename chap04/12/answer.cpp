@@ -1,12 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    double pi = 3.14;
-    double r;
+int main(){
+    double m;
 
-    cin >> r ;
-    printf("%.2f", 4 * pi * r*r*r/3);
-
+    cin >> m;
+    string s = "All";
+    double bikeTime = m / 3.0 + 50;
+    double walkTime = m / 1.2;
+    if ( bikeTime < walkTime )
+        s = "Bike";
+    else if (bikeTime > walkTime)
+        s = "Walk";
+    cout << s << endl;
+    
     return 0;
 }

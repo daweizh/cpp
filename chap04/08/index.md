@@ -1,4 +1,4 @@
-# A03.08 温度表达转化
+# A04.08 判断一个数能否同时被3和5整除
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -8,24 +8,27 @@
 
 ~~~cpp
 #include <iostream>
-#include<iomanip>
 using namespace std;
 
-int main() {
-    double f;
+int main(){
+    int n;
 
-    cin >> f ;
-    cout  << fixed << setprecision(5) << 5 * (f-32)/9 << endl;
-
+    cin >> n;
+    string s = "NO";
+    if (n % 3==0 && n % 5==0)
+        s = "YES";
+    cout << s << endl;
+    
     return 0;
 }
 ~~~
+
 
 ## w. 微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
-3. 西山征途-关注大学生成长、学习和生活
+2. 西山征途-关注大学生成长、学习和生活
 
 ![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
 ![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)

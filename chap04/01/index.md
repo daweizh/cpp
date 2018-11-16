@@ -1,4 +1,4 @@
-# A03.01 A+B问题
+# A04.01 判断数正负
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -10,21 +10,29 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int a,b;
+int main(){
+    int n;
 
-    cin >> a >> b;
-    cout << a+b << endl;
+    cin >> n;
 
+    string s = "positive";
+    if (n ==0)
+        s = "zero";
+    else if (n<0)
+        s = "negative";
+
+    cout << s << endl;
+            
     return 0;
 }
 ~~~
+
 
 ## w. 微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
-3. 西山征途-关注大学生成长、学习和生活
+2. 西山征途-关注大学生成长、学习和生活
 
 ![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
 ![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)

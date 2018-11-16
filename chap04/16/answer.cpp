@@ -1,14 +1,18 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-int main() {
-    double xa,ya;
-    double xb,yb;
+int main(){
+    int x,y,z;
 
-    cin >> xa >> ya;
-    cin >> xb >> yb;
-    printf("%.3f", sqrt(pow(xa-xb,2)+pow(ya-yb,2)) );
-
+    cin >> x >> y >>z;
+    string s = "yes";
+    if (x + y <= z)
+        s = "no";
+    else if(x + z <= y)
+        s = "no";
+    else if(y + z <= x)
+        s = "no";
+    cout << s << endl;
+    
     return 0;
 }

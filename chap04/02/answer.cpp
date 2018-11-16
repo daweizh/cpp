@@ -1,11 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int a,b,c;
+int main(){
+    double n;
 
-    cin >> a >> b >> c;
-    cout << (a+b)*c << endl;
+    cin >> n;
 
+    if (n<0)
+        n = -n;
+
+    printf("%.2f",n);
+    
     return 0;
 }

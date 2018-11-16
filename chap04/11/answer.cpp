@@ -1,12 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    double a,b;
+int main(){
+    int d;
 
-    cin >> a >> b ;
-    int c = (int)(a / b);
-    printf("%g", a - b*c);
+    cin >> d;
 
+    string s = "YES";
+    if (d==1 || d==3 || d == 5 )
+        s = "NO";
+    cout << s << endl;
+    
     return 0;
 }
