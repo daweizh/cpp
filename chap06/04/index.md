@@ -1,4 +1,4 @@
-# A05.04 求整数的和与均值
+# A04. 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,22 +6,7 @@
 
 ## a. 参考代码
 
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    int n,a,sum = 0;
-
-    cin >> n;
-    for (int i=0;i<n;i++){
-        cin >> a;
-        sum = sum + a;  
-    }
-    printf("%d %.5f",sum,(double)sum/n);    
-
-    return 0;
-}
+~~~
 ~~~
 
 

@@ -1,15 +1,12 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    int i;
+int main() {
+    double pi = 3.14159;
+    double r;
 
-    cin >> i;
-
-    bool b = i;
-    int j = b;
-
-    cout << j << endl;
+    cin >> r ;
+    printf("%.4f %.4f %.4f",2*r,2*pi*r,pi*r*r);
 
     return 0;
 }

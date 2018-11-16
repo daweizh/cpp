@@ -1,4 +1,4 @@
-# A05.17 菲波那契数列
+# A04. 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,27 +6,7 @@
 
 ## a. 参考代码
 
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    int k,first=1,second=1,fb;
-    
-    cin >> k;
-
-    if (k > 2)
-        for (int i=3;i<=k;i++){
-            fb = first + second;
-            first = second;
-            second = fb;
-        }
-    else
-        fb = 1;
-    cout << fb << endl;
-            
-    return 0;
-}
+~~~
 ~~~
 
 

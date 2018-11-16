@@ -1,11 +1,11 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    int i;
-    short s;
+int main() {
+    int a,b;
 
-    cout << sizeof(i)<< " " << sizeof(s) << endl; 
+    cin >> a >> b;
+    cout << a+b << endl;
 
     return 0;
 }

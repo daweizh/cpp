@@ -1,4 +1,4 @@
-# A03.06 浮点数向零舍入
+# A03.06 甲流疫情死亡率
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -7,42 +7,42 @@
 ## a1. 参考代码
 
 ~~~cpp
-#include<iostream>
+#include <iostream>
+#include<iomanip>
 using namespace std;
 
-int main(){
-    float f;
+int main() {
+    double a,b;
 
-    cin >> f;
-    int i = f;
-    cout << i << endl;
-    
+    cin >>a >> b ;
+    printf("%.3f%%",b*100/a);
+
     return 0;
 }
 ~~~
 
-## a2. 参考代码 
+## a2. 参考代码
 
 ~~~cpp
-#include<iostream>
+#include <iostream>
+#include<iomanip>
 using namespace std;
 
-int main(){
-    float f;
-    
-    cin >> f;
-    cout << (int)f << endl;
-    
+int main() {
+    double a,b;
+
+    cin >>a >> b ;
+    cout << fixed << setprecision(3) << b * 100 / a << "%" << endl;
+
     return 0;
 }
 ~~~
-
 
 ## w. 微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
-2. 西山征途-关注大学生成长、学习和生活
+3. 西山征途-关注大学生成长、学习和生活
 
 ![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
 ![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)

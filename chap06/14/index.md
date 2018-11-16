@@ -1,44 +1,14 @@
-# A005.14 人口增长问题 
+# A04. 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## a1. 参考代码
+## a. 参考代码
 
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    double x,n;
-
-    cin >> x >> n;
-    for(int i=0;i<n;i++){
-        x = x * (1+0.001);
-    }
-    printf("%.4f",x);
-            
-    return 0;
-}
+~~~
 ~~~
 
-## a2. 参考代码
-
-~~~cpp
-#include <iostream>
-#include <cmath>
-using namespace std;
-
-int main(){
-    double x,n;
-
-    cin >> x >> n;
-    printf("%.4f",x*pow((1+0.001),n));
-
-    return 0;
-}
-~~~
 
 ## w. 微信订阅号
 

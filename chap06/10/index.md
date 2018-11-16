@@ -1,4 +1,4 @@
-# A05.10 满足条件的数累加
+# A04. 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,23 +6,7 @@
 
 ## a. 参考代码
 
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    int m,n,sum=0;
-
-    cin >> m >> n;
-    for (int i=m;i<=n;i++){
-        if(i%17==0){
-            sum = sum + i;
-        }
-    }
-    printf("%d",sum);
-
-    return 0;
-}
+~~~
 ~~~
 
 

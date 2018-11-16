@@ -1,4 +1,4 @@
-# A03.02 浮点型数据类型存储空间大小
+# A03.02 计算(a+b)*c的值
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -7,14 +7,14 @@
 ## a. 参考代码
 
 ~~~cpp
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    float f;
-    double d;
+int main() {
+    int a,b,c;
 
-    cout << sizeof(f)<< " " << sizeof(d) << endl; 
+    cin >> a >> b >> c;
+    cout << (a+b)*c << endl;
 
     return 0;
 }
@@ -24,7 +24,7 @@ int main(){
 
 1. 智数精英-关注中小学程序设计及相关讨论
 2. 随话录-记录小朋友们的成长时光
-2. 西山征途-关注大学生成长、学习和生活
+3. 西山征途-关注大学生成长、学习和生活
 
 ![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
 ![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)

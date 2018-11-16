@@ -1,9 +1,11 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
+int main() {
+    float r1,r2;
 
-    cout << sizeof("Hello, World!") << endl; 
+    cin >> r1 >> r2 ;
+    printf("%.2f",1/(1/r1+1/r2));
 
     return 0;
 }

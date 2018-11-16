@@ -1,172 +1,254 @@
-# Chap03.需要了解的
+# Chap03. 需要了解的
 
-- 张大为 QQ:1243605845 @大连
-- 辽宁师范大学计算机与信息技术学院
-- [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
+## 3.3 ASCII
 
+ASCII 定义了 128 个字符:
 
-## 3.1 基本概念
+1. 0-31、127（删除键）是控制字符
+2. 空白字符：空格（32）、 制表符、 垂直制表符、 换行、 回车。
+3. 可显示字符：a-z、A-Z、0-9、~、！、@、、%、^、&、#、$、*、（、）、-、+、{、}、[、]、'、"、<、>、，、？、/、\|、\、_、：、;、.，还有顿号、。
 
-1. CCF=>China Computer Federation: 中国计算机协会
-2. NOI=>National Olympiad Informatics: 全国青少年信息学奥林匹克竞赛 （CCF1984年创办）
-3. CS=>Computer Science: 计算机科学
-4. NOIP=>National Olympiad in Informatics in Provinces:全国青少年信息学奥林匹克联赛
+ASCII 表：
 
-> “计算机科学教育的核心是算法设计和编程，
-> 这要求学生面对一个给定的现实问题要能够找到一个正确和高效的办法（算法）
-> 并将其变成计算机能理解的语言（程序设计语言），
-> 进而让计算机计算出人们需要的结果来。”
+|ASCII值|控制字符|ASCII值|控制字符|ASCII值|控制字符|ASCII值|控制字符|
+|---|---|---|---|---|---|---|---|
+|0   |NUT |**32**  |(space) |64  |@   |96  |、
+|1   |SOH |33  |!   |**65**  |A   |**97**  |a
+|2   |STX |34  |"   |66  |B   |98  |b
+|3   |ETX |35  |#   |67  |C   |99  |c
+|4   |EOT |36  |$   |68  |D   |100 |d
+|5   |ENQ |37  |%   |69  |E   |101 |e
+|6   |ACK |38  |&   |70  |F   |102 |f
+|7   |BEL |39  |,   |71  |G   |103 |g
+|8   |BS  |40  |(   |72  |H   |104 |h
+|9   |HT  |41  |)   |73  |I   |105 |i
+|**10**  |LF  |42  |*   |74  |J   |106 |j
+|11  |VT  |43  |+   |75  |K   |107 |k
+|12  |FF  |44  |,   |76  |L   |108 |l
+|13  |CR  |45  |-   |77  |M   |109 |m
+|14  |SO  |46  |.   |78  |N   |110 |n
+|15  |SI  |47  |/   |79  |O   |111 |o
+|16  |DLE |**48**  |0   |80  |P   |112 |p
+|17  |DCI |49  |1   |81  |Q   |113 |q
+|18  |DC2 |50  |2   |82  |R   |114 |r
+|19  |DC3 |51  |3   |83  |S   |115 |s
+|20  |DC4 |52  |4   |84  |T   |116 |t
+|21  |NAK |53  |5   |85  |U   |117 |u
+|22  |SYN |54  |6   |86  |V   |118 |v
+|23  |TB  |55  |7   |87  |W   |119 |w
+|24  |CAN |56  |8   |88  |X   |120 |x
+|25  |EM  |57  |9   |89  |Y   |121 |y
+|26  |SUB |58  |:   |90  |Z   |122 |z
+|**27**  |ESC |59  |;   |91  |[   |123 |{
+|28  |FS  |60  |<   |92  |/   |124 |\|
+|29  |GS  |61  |=   |93  |]   |125 |}
+|30  |RS  |62  |>   |94  |^   |126 |`
+|31  |US  |63  |?   |95  |_   |127 |DEL
 
-#
+测试代码
 
-> “用计算机解题并不容易，因为将一个问题抽象并构造一个模型，
-> 需要一定的数学基础，还得理解计算机的特点，“指挥”计算机干活。
-> 这还涉及欲求解问题的“可计算性”，因为并不是任何问题都可以由计算机求解的。”
+~~~cpp
+#include <stdio.h>
 
-#
+int main () {
+    int ch;
 
-> “计算机也并不知道什么是“问题”，是人告诉计算机，如何按照一步一步的程序求解。
-> 这个过程，就会训练一个人求解问题的能力，相应地，
-> 其具备的让计算机做事的思维能力称之为“计算思维”（Computing Thinking）。”
+    for( ch = 75 ; ch <= 100; ch++ ) {
+        printf("ASCII value = %d, character = %c\n", ch , ch );
+    }
 
-#
-
-> 我们必须知道如何让计算机做事，起码知道计算机是如何做事的，这就要求普及计算机科学教育。
-
-#
-
-> 在新经济形态中，计算机科学已不再是可选技能，而是同阅读、写作和算术一样的基础技能。
-
-
-- 计算机是通过执行一个个程序来实现各种神奇的功能。
-- **程序**就是为实现特定目标或解决特定问题而用计算机语言编写的一系列指令序列。
-- **计算机语言**是人与计算机之间通信的语言。
-- 编程可以简单理解为程序员为解决特定问题，按照自己的思路，在遵循特定的计算机语言规则下编写程序的过程。
-- 在某种计算机语言环境下编写程序的过程，叫程序的编辑。
-- 对所编写程序进行解析的过程叫翻译，翻译分为两种，
-	- 一种叫解释，是计算机对程序的指令翻译一句执行一句
-	- 另一种叫编译，是计算机对程序的全部指令一次性全部翻译后，再让计算机执行的行为。
-- 高级语言程序要通过编译器才能运行得到结果。
-
-## 3.2 算术运算符
-
-|预算符|含义|说明|例子|
-|---|---|---|---|
-|+|加法|加法运算|5+1=6|
-|-|减法|减法运算|13-5=8|
-|\*|乘法|乘法运算|5\*4=20|
-|/|除法|两个整数相除的结果是整数，去掉小数部分|3/2=1|
-|%|模|模运算的结果符号取决于被除数的符号|8%3=2|
-
-说明：
-
-1. 运算符的优先级与数学中相同，\*、/、%高于+，-。
-2. 当/号两端是整数时，其结果是商，否则为结果值。
-
-## 3.2 数据类型
-
-C++语言本身提供了一系列基本的数据类型包括算术类型和特殊的`void`类型两大类。
-算术类型又可以表示：字符，整数，布尔值和浮点数。
-`void`类型不分配任何值。
-
-C++的算术类型
-
-|类型|含义|最小长度|十进制范围|十进制位数|
-|---|---|---|---|---|
-|bool       |布尔|未定义|未定义|1|
-|char       |字符|8位|-128~127|3|
-|wchar_t    |宽字符|16位|一个字符||
-|char16_t   |Unicode字符|16位|一个字符||
-|char32_t   |Unicode字符|32位|一个字符||
-|short      |短整数|16位|-32768 到 32767|5|
-|int        |整数|32位|-2147483648 到 2147483647|10|
-|long       |长整型|32位|-2147483648 到 2147483647|10|
-|long long  |长长整型|64位|-9,223,372,036,854,775,808 到 9,223,372,036,854,775,807|19|
-|float      |单精度浮点型|32位|+/- 3.4e +/- 38|38|
-|double     |双精度浮点型|64位|+/- 1.7e +/- 308|308|
-|long double|扩展精度浮点型|128位|+/- 1.2e +/- 4932|4932|
-
-测试数据类型
-
-~~~
-#include<iostream>  
-#include<string>  
-#include <limits>  
-using namespace std;  
-  
-int main(){  
-    cout << "type: \t\t" << "************size**************"<< endl;  
-    cout << "bool: \t\t" << "bytes：" << sizeof(bool);  
-    cout << "\tmax：" << (numeric_limits<bool>::max)();  
-    cout << "\t\t\t\tmin：" << (numeric_limits<bool>::min)() << endl;  
-    cout << "char: \t\t" << "bytes：" << sizeof(char);  
-    cout << "\tmax：" << (numeric_limits<char>::max)();  
-    cout << "\t\t\t\tmin：" << (numeric_limits<char>::min)() << endl;  
-    cout << "signed char: \t" << "bytes：" << sizeof(signed char);  
-    cout << "\tmax：" << (numeric_limits<signed char>::max)();  
-    cout << "\t\t\t\tmin：" << (numeric_limits<signed char>::min)() << endl;  
-    cout << "unsigned char:\t" << "bytes：" << sizeof(unsigned char);  
-    cout << "\tmax：" << (numeric_limits<unsigned char>::max)();  
-    cout << "\t\t\t\tmin：" << (numeric_limits<unsigned char>::min)() << endl;  
-    cout << "wchar_t: \t" << "bytes：" << sizeof(wchar_t);  
-    cout << "\tmax：" << (numeric_limits<wchar_t>::max)();  
-    cout << "\t\t\tmin：" << (numeric_limits<wchar_t>::min)() << endl;  
-    cout << "short: \t\t" << "bytes：" << sizeof(short);  
-    cout << "\tmax：" << (numeric_limits<short>::max)();  
-    cout << "\t\t\tmin：" << (numeric_limits<short>::min)() << endl;  
-    cout << "int: \t\t" << "bytes：" << sizeof(int);  
-    cout << "\tmax：" << (numeric_limits<int>::max)();  
-    cout << "\t\t\tmin：" << (numeric_limits<int>::min)() << endl;  
-    cout << "unsigned int: \t" << "bytes：" << sizeof(unsigned);  
-    cout << "\tmax：" << (numeric_limits<unsigned>::max)();  
-    cout << "\t\t\tmin：" << (numeric_limits<unsigned>::min)() << endl;  
-    cout << "long: \t\t" << "bytes：" << sizeof(long);  
-    cout << "\tmax：" << (numeric_limits<long>::max)();  
-    cout << "\t\t\tmin：" << (numeric_limits<long>::min)() << endl;  
-    cout << "unsigned long: \t" << "bytes：" << sizeof(unsigned long);  
-    cout << "\tmax：" << (numeric_limits<unsigned long>::max)();  
-    cout << "\t\t\tmin：" << (numeric_limits<unsigned long>::min)() << endl;  
-    cout << "long long: \t" << "bytes：" << sizeof(long long);  
-    cout << "\tmax：" << (numeric_limits<long long>::max)();  
-    cout << "\tmin：" << (numeric_limits<long long>::min)() << endl;  
-    cout << "double: \t" << "bytes：" << sizeof(double);  
-    cout << "\tmax：" << (numeric_limits<double>::max)();  
-    cout << "\t\tmin：" << (numeric_limits<double>::min)() << endl;  
-    cout << "long double: \t" << "bytes：" << sizeof(long double);  
-    cout << "\tmax：" << (numeric_limits<long double>::max)();  
-    cout << "\t\tmin：" << (numeric_limits<long double>::min)() << endl;  
-    cout << "float: \t\t" << "bytes：" << sizeof(float);  
-    cout << "\tmax：" << (numeric_limits<float>::max)();  
-    cout << "\t\tmin：" << (numeric_limits<float>::min)() << endl;  
-    cout << "size_t: \t" << "bytes：" << sizeof(size_t);  
-    cout << "\tmax：" << (numeric_limits<size_t>::max)();  
-    cout << "\tmin：" << (numeric_limits<size_t>::min)() << endl;  
-    cout << "string: \t" << "bytes：" << sizeof(string) ;  
-    cout << "\tmax：" << (numeric_limits<string>::max)();
-    cout << "\t\t\t\tmin：" << (numeric_limits<string>::min)() << endl;  
-    cout << "type: \t\t" << "************size**************"<< endl;  
-    return 0;  
+    return 0;
 }
 ~~~
 
 
 
 
+## 2.3 保留字
 
-## w. 微信订阅号
+|一|二|三|
+|---|---|---|
+|alignas        |export             |sizeof|
+|alignof        |extern             |static|
+|asm            |false              |static_assert|
+|auto           |float              |static_cast|
+|bool           |for                |struct|
+|break          |friend             |switch|
+|case           |goto               |template|
+|catch          |if                 |this|
+|char           |inline             |thread_local|
+|char16_t       |int                |throw|
+|char32_t       |long               |true|
+|class          |mutable            |try|
+|const          |namespace          |typedef|
+|constexpr      |new                |typeid|
+|const_cast     |noexcept           |typename|
+|continue       |nullptr            |union|
+|decltype       |operator           |unsigned|
+|default        |private            |using|
+|delete         |protected          |virtual|
+|do             |public             |void|
+|double         |register           |volatile|
+|dynamic_cast   |reinterpret_cast   |wchar_t|
+|else           |return             |while|
+|enum           |short              ||
+|explicit       |signed             ||
 
-1. 智数精英-关注中小学程序设计及相关讨论
-2. 随话录-记录小朋友们的成长时光
-2. 西山征途-关注大学生成长、学习和生活
 
-![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
-![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)
-![欢迎关注“西山征途”订阅号](../../assets/me/img/xszt8.jpg)
+## 2.6 printf
 
-----------
+C++程序需要通过I/O库函数与外界通信、交流。
+`int printf(const char *format,...)`发送格式化输出到标准输出`stdout`。
+如果成功，则返回写入的字符总数，否则返回一个负数。
 
-## b. [返回](../)
+`printf()`函数的调用格式为：
+
+    printf("<格式化字符串>",<参量表>);
+
+
+
+`format`的格式是`%[flags][width][.precision][length]specifier`。
+
+**1.specifier**
+
+|specifier(格式字符)|意义|
+|---|---|
+|d   |以十进制形式输出带符号整数(正数不输出符号)
+|o   |以八进制形式输出无符号整数(不输出前缀0)
+|x,X |以十六进制形式输出无符号整数(不输出前缀Ox)
+|u   |以十进制形式输出无符号整数
+|f   |以小数形式输出单、双精度实数
+|e,E |以指数形式输出单、双精度实数
+|g,G |以%f或%e中较短的输出宽度输出单、双精度实数
+|c   |输出单个字符
+|s   |输出字符串
+|p   |输出指针地址
+|lu  |32位无符号整数
+|llu |64位无符号整数
+
+**2.length**
+
+|length(长度)|描述
+|---|---|
+|h|参数被解释为短整型或无符号短整型（仅适用于整数说明符：i、d、o、u、x 和 X）。
+|l|参数被解释为长整型或无符号长整型，适用于整数说明符（i、d、o、u、x 和 X）及说明符 c（表示一个宽字符）和 s（表示宽字符字符串）。
+|L|参数被解释为长双精度型（仅适用于浮点数说明符：e、E、f、g 和 G）。
+
+**3.precision**
+
+|.precision（精度） |描述
+|---|---|
+|.number    |对于整数说明符（d、i、o、u、x、X）：precision 指定了要写入的数字的最小位数。如果写入的值短于该数，结果会用前导零来填充。如果写入的值长于该数，结果不会被截断。精度为 0 意味着不写入任何字符。
+||对于 e、E 和 f 说明符：要在小数点后输出的小数位数。
+||对于 g 和 G 说明符：要输出的最大有效位数。
+||对于 s: 要输出的最大字符数。默认情况下，所有字符都会被输出，直到遇到末尾的空字符。
+||对于 c 类型：没有任何影响。
+||当未指定任何精度时，默认为 1。如果指定时不带有一个显式值，则假定为 0。
+|.* |精度在 format 字符串中未指定，但是会作为附加整数值参数放置于要被格式化的参数之前。
+
+**4.width**
+
+|width（宽度）  |描述
+|---|---|
+|(number)   |要输出的字符的最小数目。如果输出的值短于该数，结果会用空格填充。如果输出的值长于该数，结果不会被截断。
+|*  |宽度在format字符串中未指定，但是会作为附加整数值参数放置于要被格式化的参数之前。
+
+
+**5.flags**
+
+|flags（标识）  |描述
+|---|---|
+|-  |在给定的字段宽度内左对齐，默认是右对齐（参见 width 子说明符）。
+|+  |强制在结果之前显示加号或减号（+ 或 -），即正数前面会显示 + 号。默认情况下，只有负数前面会显示一个 - 号。
+|空格 |如果没有写入任何符号，则在该值前面插入一个空格。
+|#  |与 o、x 或 X 说明符一起使用时，非零值前面会分别显示 0、0x 或 0X。
+||与 e、E 和 f 一起使用时，会强制输出包含一个小数点，即使后边没有数字时也会显示小数点。默认情况下，如果后边没有数字时候，不会显示显示小数点。
+||与 g 或 G 一起使用时，结果与使用 e 或 E 时相同，但是尾部的零不会被移除。
+|0  |在指定填充 padding 的数字左边放置零（0），而不是空格（参见 width 子说明符）。
+
+测试代码
+
+~~~cpp
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+    char c, s[20];
+    int a=1234;
+    float f=3.141592653589;
+    double x=0.12345678987654321;
+    strcpy(s , "Hello,Comrade");
+    c='\x41';
     
-## h. [首页](../../)
+    printf("a=%d\n",a);       /*结果输出十进制整数a=1234*/
+    printf("a=%6d\n",a);      /*结果输出6位十进制数a=1234*/
+    printf("a=%06d\n",a);     /*结果输出6位十进制数a=001234*/
+    printf("a=%2d\n",a);      /*a超过2位,按实际值输出a=1234*/
+    printf("f=%f\n",f);       /*输出浮点数f=3.141593*/
+    printf("f=%6.4f\n",f);    /*输出6位其中小数点后4位的浮点数f=3.1416*/
+    printf("x=%lf\n",x);      /*输出长浮点数x=0.123457*/
+    printf("x=%18.16lf\n",x); /*输出18位其中小数点后16位的长浮点数x=0.1234567898765432*/
+    printf("c=%c\n",c);       /*输出字符c=A*/
+    printf("c=%x\n",c);       /*输出字符的ASCII码值c=41*/
+    printf("s[]=%s\n",s);     /*输出数组字符串s[]=Hello,Comrade*/
+    printf("s[]=%6.9s\n",s);  /*输出最多9个字符的字符串s[]=Hello,Co*/
+    printf("s=%p\n",s);       /*输出数组字符串首字符地址s=FFBE*/
 
- 
+    return 0;
+}
+
+~~~
+
+## 2.8 转义字符
+
+所有的ASCII码都可以用“\”加数字（一般是8进制数字）来表示。
+而C++中定义了一些字母前加"\\"来表示常见的那些不能显示的ASCII字符，如\0,\t,\n等，
+就称为转义字符，因为后面的字符，都不是它本来的ASCII字符意思了。
+
+|转义字符 |意义|ASCII码值（十进制）
+|---|---|---|
+|\a|响铃(BEL)|007
+|\b|退格(BS) ，将当前位置移到前一列|008
+|\f|换页(FF)，将当前位置移到下页开头|012
+|\n|换行(LF) ，将当前位置移到下一行开头|010
+|\r|回车(CR) ，将当前位置移到本行开头|013
+|\t|水平制表(HT) （跳到下一个TAB位置）|009
+|\v|垂直制表(VT)|011
+|\\\\   |代表一个反斜线字符'\\'|092
+|\\'|代表一个单引号（撇号）字符|039
+|\\"|代表一个双引号字符|034
+|\?|代表一个问号  |063
+|\0|空字符(NULL)|000
+|\ddd|1到3位八进制数所代表的任意字符|三位八进制
+|\xhh|1到2位十六进制所代表的任意字符|二位十六进制
+
+
+
+头文件是C++程序对其他程序的引用。
+格式为：`#include <引用文件名>`或`#include "引用文件名"`。
+
+采用名字空间是为了在C++新标准中，解决多人同时编写大型程序时名字产生冲突问题。
+
+`using namespace std` 表示这个程序采用的全部都是std（标准）名字空间。
+
+
+
+2. 计算机存储数据的基本单位是（ ）。
+ A. bit（一个数据位）	 B. Byte（存储基本单位）	 C. GB	 D. KB
+
+1GB = 1024MB = 1024 x 1024B = 1024 x 1024 x 8bit 
+
+1GB = 1024MB
+1MB = 1024KB
+1KB = 1024B
+1B = 8bit
+
+3. 	下列协议中与电子邮件无关的是（ ）。
+ A. POP3(邮局协议)	 B. SMTP（邮递员）	 C. WTO（世界贸易组织）	 D. IMAP（互联网邮件协议）
+
+18. 从（ ）年开始，NOIP竞赛将不再支持Pascal语言。
+ A. 2020	 B. 2021	 C. 2022（2017+5）	 D. 2023
+
+20. 以下和计算机领域密切相关的奖项是（ ）。
+ A. 奥斯卡奖(电影)	 B. 图灵奖（计算机）	 C. 诺贝尔奖（科学大奖）	 D. 普利策奖（新闻）
+

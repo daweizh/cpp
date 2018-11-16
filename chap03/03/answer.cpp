@@ -1,11 +1,11 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    bool b;
-    char c;
-    
-    cout << sizeof(b)<< " " << sizeof(c) << endl; 
-    
+int main() {
+    int a,b,c;
+
+    cin >>a >> b >> c;
+    cout << (a+b)/c << endl;
+
     return 0;
 }

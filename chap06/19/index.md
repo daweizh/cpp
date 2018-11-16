@@ -1,4 +1,4 @@
-# A05.19 救援 
+# A04. 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,24 +6,7 @@
 
 ## a. 参考代码
 
-~~~cpp
-#include <iostream>
-#include <cmath>
-using namespace std;
-
-int main(){
-    int n;
-    double a,b,c,t=0;
-    
-    cin >> n;
-    for(int i=0;i<n;i++){
-        cin >> a >> b >> c;
-        t = t + sqrt(a*a+b*b) * 2 / 50 + 1.5 * c;
-    }
-    printf("%.0f",ceil(t));
-    
-    return 0;   
-} 
+~~~
 ~~~
 
 

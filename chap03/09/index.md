@@ -1,29 +1,25 @@
-# A03.09 整型与布尔型的转换
+# A03.09 与圆相关的计算
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## a. 参考代码 
+## a. 参考代码
 
 ~~~cpp
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    int i;
+int main() {
+    double pi = 3.14159;
+    double r;
 
-    cin >> i;
-
-    bool b = i;
-    int j = b;
-
-    cout << j << endl;
+    cin >> r ;
+    printf("%.4f %.4f %.4f",2*r,2*pi*r,pi*r*r);
 
     return 0;
 }
 ~~~
-
 
 ## w. 微信订阅号
 

@@ -1,4 +1,4 @@
-# A05.16 买房子
+# A04. 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,29 +6,7 @@
 
 ## a. 参考代码
 
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    int i;
-    double N,K, M = 200;
-    
-    cin >> N >> K;
-
-    for (i=1;i<=20;i++){
-        if (N * i >= M)
-            break;
-        M = M * (1 + K/100);
-    }
-    
-    if(i<=20)   
-        printf("%d",i);
-    else
-        cout << "Impossible" << endl;
-            
-    return 0;
-} 
+~~~
 ~~~
 
 

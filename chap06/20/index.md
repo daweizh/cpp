@@ -1,4 +1,4 @@
-# A05.20 球弹跳高度的计算 
+# A04. 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,24 +6,7 @@
 
 ## a. 参考代码
 
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    double h,sum=0;
-    
-    cin >> h;
-    sum = h;
-    for(int i=1;i<10;i++){
-        sum = sum + h;
-        h = h / 2;
-    }
-    cout << sum << endl;
-    cout << h/2 << endl;
-    
-    return 0;
-} 
+~~~
 ~~~
 
 

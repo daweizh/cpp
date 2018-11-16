@@ -1,4 +1,4 @@
-# A05.12 与指定数字相同的数的个数
+# A04. 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,24 +6,7 @@
 
 ## a. 参考代码
 
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    int N,m,a,sum=0;
-
-    cin >> N >> m;
-    for (int i=0;i<N;i++){
-        cin >> a;
-        if(a==m){
-            sum = sum + 1;
-        }
-    }
-    cout << sum << endl;    
-
-    return 0;
-}
+~~~
 ~~~
 
 
