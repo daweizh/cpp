@@ -1,69 +1,21 @@
-# A02.03 对齐输出
+# A03.03 其他基本数据类型存储空间大小
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
-
-写程序入口主要函数。
+## a. 参考代码
 
 ~~~cpp
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-
-    return 0;
-}
-~~~
-
-## step2
-
-命名变量并赋予合适的类型。
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a,b,c;
-
-    return 0;
-}
-~~~
-
-## step3
-
-从键盘读取输入数据到对应变量。
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a,b,c;
-
-    cin >> a >> b >> c;
-
-    return 0;
-}
-~~~
-
-## step4
-
-根据题意要求输出答案内容。
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a,b,c;
-
-    cin >> a >> b >> c;
-    printf("%8d %8d %8d",a,b,c);
-
+int main(){
+    bool b;
+    char c;
+    
+    cout << sizeof(b)<< " " << sizeof(c) << endl; 
+    
     return 0;
 }
 ~~~

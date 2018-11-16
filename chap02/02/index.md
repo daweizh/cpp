@@ -1,69 +1,21 @@
-# A02.02 输出第二个整数
+# A03.02 浮点型数据类型存储空间大小
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
-
-写主程序框架。
+## a. 参考代码
 
 ~~~cpp
-#include <iostream>
+#include<iostream>
 using namespace std;
-    
+
 int main(){
-    
-    return 0;
-}
-~~~
+    float f;
+    double d;
 
-## step2
+    cout << sizeof(f)<< " " << sizeof(d) << endl; 
 
-定义变量类型和名称。
-
-~~~cpp
-#include <iostream>
-using namespace std;
-    
-int main(){
-    int a,b,c;
-    
-    return 0;
-}
-~~~
-
-## step3
-
-从键盘读数据到变量。
-
-~~~cpp
-#include <iostream>
-using namespace std;
-    
-int main(){
-    int a,b,c;
-    
-    cin >> a >> b >> c;
-    
-    return 0;
-}
-~~~
-
-## step4
-
-根据问题要求输出答题结果。
-
-~~~cpp
-#include <iostream>
-using namespace std;
-    
-int main(){
-    int a,b,c;
-    
-    cin >> a >> b >> c;
-    cout << b << endl;
-    
     return 0;
 }
 ~~~

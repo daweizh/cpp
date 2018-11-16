@@ -1,74 +1,42 @@
-# A02.06 空格分隔输出
+# A03.06 浮点数向零舍入
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
+## a1. 参考代码
 
 ~~~cpp
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
+int main(){
+    float f;
 
-    return 0;
-}
-~~~
-
-## step2
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    char a;
-    int b;
-    float c;
-    double d;
+    cin >> f;
+    int i = f;
+    cout << i << endl;
     
     return 0;
 }
 ~~~
 
-
-## step3
+## a2. 参考代码 
 
 ~~~cpp
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-    char a;
-    int b;
-    float c;
-    double d;
+int main(){
+    float f;
     
-    cin >> a >> b >> c >> d;
-
+    cin >> f;
+    cout << (int)f << endl;
+    
     return 0;
 }
 ~~~
 
-## step4
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    char a;
-    int b;
-    float c;
-    double d;
-    
-    cin >> a >> b >> c >> d;
-    printf("%c %d %f %f",a,b,c,d);
-
-    return 0;
-}
-~~~
 
 ## w. 微信订阅号
 

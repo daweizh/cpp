@@ -2,10 +2,11 @@
 using namespace std;
 
 int main(){
-    int a = 32768;
-    short b = a;
-    
-    cout << "D C" <<endl;
+    float f;
+
+    cin >> f;
+    int i = f;
+    cout << i << endl;
     
     return 0;
 }

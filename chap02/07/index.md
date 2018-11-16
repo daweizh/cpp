@@ -1,67 +1,25 @@
-# A02.07 输出浮点数
+# A03.07 打印ASCII码
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
+## a. 参考代码 
 
 ~~~cpp
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
+int main(){
+    char c;
+
+    scanf("%c",&c);
+    cout << (int)c << endl;
 
     return 0;
 }
 ~~~
 
-## step2
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    double a;
-
-    return 0;
-}
-~~~
-
-## step3
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    double a;
-
-    cin >> a ;
-
-    return 0;
-}
-~~~
-
-## step4
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    double a;
-
-    cin >> a ;
-    printf("%f\n",a);
-    printf("%.5f\n",a);
-    printf("%e\n",a);
-    printf("%g\n",a);
-
-    return 0;
-}
-~~~
 
 ## w. 微信订阅号
 

@@ -1,65 +1,25 @@
-# A02.04 输出保留3位小数的浮点数
+# A03.04 填空：类型转换1
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
+## a. 参考代码 
 
 ~~~cpp
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-
+int main(){
+    int a = 32768;
+    short b = a;
+    
+    cout << "D C" <<endl;
+    
     return 0;
 }
 ~~~
 
-## step2
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    float a;
-
-    return 0;
-}
-~~~
-
-
-## step3
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    float a;
-
-    cin >> a ;
-
-    return 0;
-}
-~~~
-
-## step4
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    float a;
-
-    cin >> a ;
-    printf("%.3f",a);
-
-    return 0;
-}
-~~~
 
 ## w. 微信订阅号
 

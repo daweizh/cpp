@@ -2,10 +2,10 @@
 using namespace std;
 
 int main(){
-    bool b;
-    char c;
+    float f;
     
-    cout << sizeof(b)<< " " << sizeof(c) << endl; 
+    cin >> f;
+    cout << (int)f << endl;
     
     return 0;
 }

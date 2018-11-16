@@ -1,47 +1,29 @@
-# A02.09 字符菱形
+# A03.09 整型与布尔型的转换
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
+## a. 参考代码 
 
 ~~~cpp
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-    char c;
+int main(){
+    int i;
 
-    cin >> c;
-    cout << "  " << c << endl;
-    cout << " " << c << c << c << endl;
-    cout << c << c << c << c << c << endl;
-    cout << " " << c << c << c << endl;
-    cout << "  " << c << endl;
+    cin >> i;
 
-    return 0;
-}
-~~~
+    bool b = i;
+    int j = b;
 
-## step2
-
-~~~cpp
-#include <iostream>
-
-int main() {
-    char ch;
-
-    scanf("%c", &ch);
-    printf("  %c\n",ch);
-    printf(" %c%c%c\n",ch,ch,ch);
-    printf("%c%c%c%c%c\n",ch,ch,ch,ch,ch);
-    printf(" %c%c%c\n",ch,ch,ch);
-    printf("  %c\n",ch);
+    cout << j << endl;
 
     return 0;
 }
 ~~~
+
 
 ## w. 微信订阅号
 

@@ -1,201 +1,156 @@
-# Chap02.需要了解的
+# Chap03.需要了解的
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
 
-## 2.1 main
+## 3.1 基本概念
 
-每个C++程序都包含一到多个函数，但必须有一个函数叫`main`，如下：
+1. CCF=>China Computer Federation: 中国计算机协会
+2. NOI=>National Olympiad Informatics: 全国青少年信息学奥林匹克竞赛 （CCF1984年创办）
+3. CS=>Computer Science: 计算机科学
+4. NOIP=>National Olympiad in Informatics in Provinces:全国青少年信息学奥林匹克联赛
+
+> “计算机科学教育的核心是算法设计和编程，
+> 这要求学生面对一个给定的现实问题要能够找到一个正确和高效的办法（算法）
+> 并将其变成计算机能理解的语言（程序设计语言），
+> 进而让计算机计算出人们需要的结果来。”
+
+#
+
+> “用计算机解题并不容易，因为将一个问题抽象并构造一个模型，
+> 需要一定的数学基础，还得理解计算机的特点，“指挥”计算机干活。
+> 这还涉及欲求解问题的“可计算性”，因为并不是任何问题都可以由计算机求解的。”
+
+#
+
+> “计算机也并不知道什么是“问题”，是人告诉计算机，如何按照一步一步的程序求解。
+> 这个过程，就会训练一个人求解问题的能力，相应地，
+> 其具备的让计算机做事的思维能力称之为“计算思维”（Computing Thinking）。”
+
+#
+
+> 我们必须知道如何让计算机做事，起码知道计算机是如何做事的，这就要求普及计算机科学教育。
+
+#
+
+> 在新经济形态中，计算机科学已不再是可选技能，而是同阅读、写作和算术一样的基础技能。
+
+
+- 计算机是通过执行一个个程序来实现各种神奇的功能。
+- **程序**就是为实现特定目标或解决特定问题而用计算机语言编写的一系列指令序列。
+- **计算机语言**是人与计算机之间通信的语言。
+- 编程可以简单理解为程序员为解决特定问题，按照自己的思路，在遵循特定的计算机语言规则下编写程序的过程。
+- 在某种计算机语言环境下编写程序的过程，叫程序的编辑。
+- 对所编写程序进行解析的过程叫翻译，翻译分为两种，
+	- 一种叫解释，是计算机对程序的指令翻译一句执行一句
+	- 另一种叫编译，是计算机对程序的全部指令一次性全部翻译后，再让计算机执行的行为。
+- 高级语言程序要通过编译器才能运行得到结果。
+
+## 3.2 算术运算符
+
+|预算符|含义|说明|例子|
+|---|---|---|---|
+|+|加法|加法运算|5+1=6|
+|-|减法|减法运算|13-5=8|
+|\*|乘法|乘法运算|5\*4=20|
+|/|除法|两个整数相除的结果是整数，去掉小数部分|3/2=1|
+|%|模|模运算的结果符号取决于被除数的符号|8%3=2|
+
+说明：
+
+1. 运算符的优先级与数学中相同，\*、/、%高于+，-。
+2. 当/号两端是整数时，其结果是商，否则为结果值。
+
+## 3.2 数据类型
+
+C++语言本身提供了一系列基本的数据类型包括算术类型和特殊的`void`类型两大类。
+算术类型又可以表示：字符，整数，布尔值和浮点数。
+`void`类型不分配任何值。
+
+C++的算术类型
+
+|类型|含义|最小长度|十进制范围|十进制位数|
+|---|---|---|---|---|
+|bool       |布尔|未定义|未定义|1|
+|char       |字符|8位|-128~127|3|
+|wchar_t    |宽字符|16位|一个字符||
+|char16_t   |Unicode字符|16位|一个字符||
+|char32_t   |Unicode字符|32位|一个字符||
+|short      |短整数|16位|-32768 到 32767|5|
+|int        |整数|32位|-2147483648 到 2147483647|10|
+|long       |长整型|32位|-2147483648 到 2147483647|10|
+|long long  |长长整型|64位|-9,223,372,036,854,775,808 到 9,223,372,036,854,775,807|19|
+|float      |单精度浮点型|32位|+/- 3.4e +/- 38|38|
+|double     |双精度浮点型|64位|+/- 1.7e +/- 308|308|
+|long double|扩展精度浮点型|128位|+/- 1.2e +/- 4932|4932|
+
+测试数据类型
 
 ~~~
-int main(){
-
-    return 0;
+#include<iostream>  
+#include<string>  
+#include <limits>  
+using namespace std;  
+  
+int main(){  
+    cout << "type: \t\t" << "************size**************"<< endl;  
+    cout << "bool: \t\t" << "bytes：" << sizeof(bool);  
+    cout << "\tmax：" << (numeric_limits<bool>::max)();  
+    cout << "\t\t\t\tmin：" << (numeric_limits<bool>::min)() << endl;  
+    cout << "char: \t\t" << "bytes：" << sizeof(char);  
+    cout << "\tmax：" << (numeric_limits<char>::max)();  
+    cout << "\t\t\t\tmin：" << (numeric_limits<char>::min)() << endl;  
+    cout << "signed char: \t" << "bytes：" << sizeof(signed char);  
+    cout << "\tmax：" << (numeric_limits<signed char>::max)();  
+    cout << "\t\t\t\tmin：" << (numeric_limits<signed char>::min)() << endl;  
+    cout << "unsigned char:\t" << "bytes：" << sizeof(unsigned char);  
+    cout << "\tmax：" << (numeric_limits<unsigned char>::max)();  
+    cout << "\t\t\t\tmin：" << (numeric_limits<unsigned char>::min)() << endl;  
+    cout << "wchar_t: \t" << "bytes：" << sizeof(wchar_t);  
+    cout << "\tmax：" << (numeric_limits<wchar_t>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<wchar_t>::min)() << endl;  
+    cout << "short: \t\t" << "bytes：" << sizeof(short);  
+    cout << "\tmax：" << (numeric_limits<short>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<short>::min)() << endl;  
+    cout << "int: \t\t" << "bytes：" << sizeof(int);  
+    cout << "\tmax：" << (numeric_limits<int>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<int>::min)() << endl;  
+    cout << "unsigned int: \t" << "bytes：" << sizeof(unsigned);  
+    cout << "\tmax：" << (numeric_limits<unsigned>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<unsigned>::min)() << endl;  
+    cout << "long: \t\t" << "bytes：" << sizeof(long);  
+    cout << "\tmax：" << (numeric_limits<long>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<long>::min)() << endl;  
+    cout << "unsigned long: \t" << "bytes：" << sizeof(unsigned long);  
+    cout << "\tmax：" << (numeric_limits<unsigned long>::max)();  
+    cout << "\t\t\tmin：" << (numeric_limits<unsigned long>::min)() << endl;  
+    cout << "long long: \t" << "bytes：" << sizeof(long long);  
+    cout << "\tmax：" << (numeric_limits<long long>::max)();  
+    cout << "\tmin：" << (numeric_limits<long long>::min)() << endl;  
+    cout << "double: \t" << "bytes：" << sizeof(double);  
+    cout << "\tmax：" << (numeric_limits<double>::max)();  
+    cout << "\t\tmin：" << (numeric_limits<double>::min)() << endl;  
+    cout << "long double: \t" << "bytes：" << sizeof(long double);  
+    cout << "\tmax：" << (numeric_limits<long double>::max)();  
+    cout << "\t\tmin：" << (numeric_limits<long double>::min)() << endl;  
+    cout << "float: \t\t" << "bytes：" << sizeof(float);  
+    cout << "\tmax：" << (numeric_limits<float>::max)();  
+    cout << "\t\tmin：" << (numeric_limits<float>::min)() << endl;  
+    cout << "size_t: \t" << "bytes：" << sizeof(size_t);  
+    cout << "\tmax：" << (numeric_limits<size_t>::max)();  
+    cout << "\tmin：" << (numeric_limits<size_t>::min)() << endl;  
+    cout << "string: \t" << "bytes：" << sizeof(string) ;  
+    cout << "\tmax：" << (numeric_limits<string>::max)();
+    cout << "\t\t\t\tmin：" << (numeric_limits<string>::min)() << endl;  
+    cout << "type: \t\t" << "************size**************"<< endl;  
+    return 0;  
 }
 ~~~
 
-每个函数都包含四个部分：
-
-1. 返回类型
-2. 函数名
-3. 圆括号括起来的参数列表（可以为空）
-4. 花括号括起来的函数体
-
-## 2.2 iostream
-
-C++语言本身没有定义输入输出语句，需要包含额外的用于输入输出的`标准库`。
-`iostream`是C++的一个标准库。
-该文件定义了 cin、cout、cerr 和 clog 对象，
-分别对应于标准输入流、标准输出流、非缓冲标准错误流和缓冲标准错误流。
-
-举例：
-
-1. cin
-    ~~~
-    #include <iostream>
-    
-    int main(){
-        char str[200];
-        
-        std::cin >> str;
-        std::cout << str << std::endl;
-        
-        return 0;
-    } 
-    ~~~
-2. cout
-    ~~~
-    #include <iostream>
-    
-    int main(){
-        
-        std::cout << "Example for cout." << std::endl;
-        
-        return 0;
-    }
-    ~~~
-3. cerr
-    ~~~
-    #include <iostream>
-    
-    int main(){
-        
-        std::cerr << "Example for cerr." << std::endl;
-        
-        return 0;
-    }
-    ~~~
-4. clog
-    ~~~
-    #include <iostream>
-    
-    int main(){
-        
-        std::clog << "Example for clog." << std::endl;
-        
-        return 0;
-    }
-    ~~~
-
-## 2.3 cout
-
-cout语句的一般格式为：
-    cout << 项目1 << 项目2 << ... << 项目n;
-
-功能：
-
-1. 如果项目是表达式，则输出表达式的值。
-2. 如果项目加引号，则输出引号内的内容。
-
-在执行cout语句，先把数据放在输出缓冲区中，直到输出缓冲区满或遇到cout语句中的endl或'\n'为止，
-此时将缓冲区中已有的数据一起输出，并清空缓冲区。输出遇到endl或'\n'换行。
 
 
-## 2.4 namespace
-
-为了区分相同的名字使用`namespace`，在不同的`namespace`中可以使用相同的名字。
-
-可以用`using namespace std`声明后续代码使用`std`命名空间，如代码
-
-~~~
-#include <iostream>
-
-int main(){
-    
-    std::cout << "Example for cout." << std::endl;
-    
-    return 0;
-}
-~~~
-
-中的`std`可以通过`using namespace std`省略掉。
-
-~~~
-#include <iostream>
-using namespace std;
-
-int main(){
-    
-    cout << "Example for cout." << endl;
-    
-    return 0;
-}
-~~~
-
-## 2.5 DevCpp 快捷键
-
-1. F11 编译执行
-2. F9 编译（找程序的语法错误）
-3. insert 改变光标作用（插入或者覆盖）
-4. home 光标移到行首（文字头）
-5. end 行尾
-6. Tab 制表键（缩进4字符）
-
-----
-
-1. Ctrl+n 创建新文件
-2. Ctrl+s 保存文件（文件名用英文，最好有意义，大小写区分）
-3. Ctrl+a 全选
-4. Ctrl+c 复制到剪贴板
-5. Ctrl+v 复制到光标当前位置
-6. Ctrl+z 后悔
-7. Ctrl+y 重做
-
-----
-
-1. Shift+↑ 从光标处开始向上选择
-2. Shift+↓ 从光标处开始向下选择
-3. Shift+→ 从光标处开始向右选择 
-4. Shift+← 从光标处开始向左选择
-
-## 2.6 关键字
-
-1. include 包含
-2. iostream=>input output stream 输入输出流
-3. using 使用
-4. namespace 名字空间
-5. std=>standard 标准
-6. int=>integer 整数
-7. main 主程序 操作系统调用的入口函数
-8. return 返回
-
-~~~
-#include <iostream>
-using namespace std;
-
-int main(){
-    char s[200];
-
-    cin >> s;
-    cout << s << endl;
-
-    return 0;
-}
-~~~
-
-1. cout 代表标注输出设备：屏幕，打印机，网络
-2. cin 代表输入设备：键盘，鼠标，触屏，输入笔
-3. endl=>end line 结束一行
-
-cin 和 cout 是外部世界和程序通讯的指令
-
-变量使用来保存数据的地方，如`int a,b,c`中，a,b,c是变量，变量（筐）大小由前面int规定，由此a,b,c就是int那么大2^32，是个十位数。
-
-
-## 2.7 message
-
-1. [Error(错误)] expected（期望） ';' before（在。。。之前） 'return'
-2. [Error] 'cin' was not declared（声明） in this scope（范围）
-3. [Note（提示）] 'std::cin'
-
-
-## 2.8 web resources
-
-1. [http://noi.openjudge.cn](http://noi.openjudge.cn)
-2. [http://daweizh.github.io/cpp](http://daweizh.github.io/cpp)
-3. [http://daweizh.github.io/noip](http://daweizh.github.io/noip)
 
 
 ## w. 微信订阅号

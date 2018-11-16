@@ -1,13 +1,11 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-    
+
 int main(){
-    int a,b,c;
-    
-    cin >> a >> b >> c;
-    cout << b << endl;
-    
+    float f;
+    double d;
+
+    cout << sizeof(f)<< " " << sizeof(d) << endl; 
+
     return 0;
 }
-      
-    

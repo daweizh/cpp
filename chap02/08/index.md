@@ -1,63 +1,21 @@
-# A02.08 字符三角形
+# A03.08 打印字符
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## step1
+## a. 参考代码 
 
 ~~~cpp
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-    
-    return 0;
-}
-~~~
-
-## step2
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    char c;
-    
-    return 0;
-}
-~~~
-
-## step3
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    char c;
+int main(){
+    int c;
 
     cin >> c;
+    cout << (char)c << endl;
 
-    return 0;
-}
-~~~
-
-## step4
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    char c;
-
-    cin >> c;
-    cout << "  " << c << endl;
-    cout << " " << c<<c<<c << endl;
-    cout << c<<c<<c<<c<<c<< endl;
-    
     return 0;
 }
 ~~~

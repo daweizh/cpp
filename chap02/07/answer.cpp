@@ -1,14 +1,11 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-    double a;
+int main(){
+    char c;
 
-    cin >> a ;
-    printf("%f\n",a);
-    printf("%.5f\n",a);
-    printf("%e\n",a);
-    printf("%g\n",a);
+    scanf("%c",&c);
+    cout << (int)c << endl;
 
     return 0;
 }
