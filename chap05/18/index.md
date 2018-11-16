@@ -1,4 +1,4 @@
-# A04.18 点和正方形的关系
+# A05.18 鸡尾酒疗法
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -6,21 +6,33 @@
 
 ## a. 参考代码
 
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 
 int main(){
-    int x,y;
-
-    cin >>x >> y;
-    string s = "no";
-    if (x<=1 && x>=-1 && y <=1 && y>=-1)
-        s = "yes";
-    cout << s << endl;
+    int n;
+    double a[20][2];
     
+    cin >> n;
+    for (int i=0;i<n;i++){
+        cin >> a[i][1] >> a[i][2];
+    }
+    
+    double x = a[0][2] / a[0][1] * 100;
+    for(int i=1;i<n;i++){
+        double y = a[i][2] / a[i][1] * 100;
+        if (y-x>5) {
+            cout << "better" << endl;   
+        } else if (x-y>5) {
+            cout << "worse" << endl;    
+        } else {
+            cout << "same" << endl; 
+        }
+    }
+
     return 0;
-}
+} 
 ~~~
 
 

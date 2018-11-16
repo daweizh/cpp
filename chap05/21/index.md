@@ -1,4 +1,4 @@
-# A04.21 苹果和虫子2
+# A05.21 角谷猜想 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -8,37 +8,25 @@
 
 ~~~cpp
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main(){
-    int n,x,y;
-    cin >> n >> x >> y;
-
-    if (n>0){
-        if(y>0){
-            if (x>0){
-                int m = y/x +1;
-                if (y%x==0){
-                    m = y/x;
-                }
-                if (n-m>0){
-                    printf("%d",n-m);
-                } else {
-                    printf("0");
-                }
-            } else {
-                printf("%d",n);
-            }       
-        } else {
-            printf("%d",n);
-        }
-    } else {
-        printf("0");    
+    long long int N;
+    cin >> N;
+    
+    while(N>1){
+        if(N%2==1){
+            cout << N << "*3+1=" << N * 3 + 1 << endl;
+            N = N * 3 + 1;
+        }else{
+            cout << N << "/2=" << N / 2 << endl;
+            N = N / 2; 
+        } 
     }
-
-    return 0;
-}
+    cout << "End";
+    
+    return 0;   
+} 
 ~~~
 
 

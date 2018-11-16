@@ -2,17 +2,16 @@
 using namespace std;
 
 int main(){
-    int x,y;
+    int n,a,max = 0;
 
-    cin >> x >> y;
+    cin >> n;
+    for (int i=0;i<n;i++){
+        cin >> a;
+        if (a>max){
+            max = a;
+        }   
+    }
+    printf("%d",max);   
 
-    string s = ">";
-    if (x==y)
-        s = "=";
-    else if (x <y)
-        s = "<"; 
-
-    cout << s << endl;
-    
     return 0;
 }

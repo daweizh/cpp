@@ -1,4 +1,4 @@
-# A04.01 判断数正负
+# A05.01 求平均年龄 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,18 +11,16 @@
 using namespace std;
 
 int main(){
-    int n;
+    int n,a;
+    double sum = 0;
 
     cin >> n;
-
-    string s = "positive";
-    if (n ==0)
-        s = "zero";
-    else if (n<0)
-        s = "negative";
-
-    cout << s << endl;
-            
+    for (int i=0;i<n;i++){
+        cin >> a;
+        sum = sum + a;  
+    }
+    printf("%.2f",sum/n);
+    
     return 0;
 }
 ~~~

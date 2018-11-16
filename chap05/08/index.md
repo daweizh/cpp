@@ -1,4 +1,4 @@
-# A04.08 判断一个数能否同时被3和5整除
+# A05.08 多边形内角和
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,14 +11,15 @@
 using namespace std;
 
 int main(){
-    int n;
+    int n,a,sum=0;
 
     cin >> n;
-    string s = "NO";
-    if (n % 3==0 && n % 5==0)
-        s = "YES";
-    cout << s << endl;
-    
+    for (int i=1;i<n;i++){
+        cin >> a;
+        sum = sum + a;
+    }
+    printf("%d",(n-2)*180-sum); 
+
     return 0;
 }
 ~~~

@@ -1,4 +1,4 @@
-# A04.04 奇偶ASCII值判断
+# A05.04 求整数的和与均值
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,14 +11,15 @@
 using namespace std;
 
 int main(){
-    char c=getchar();
+    int n,a,sum = 0;
 
-    string s = "NO";
-    if (c%2==1)
-        s = "YES";
+    cin >> n;
+    for (int i=0;i<n;i++){
+        cin >> a;
+        sum = sum + a;  
+    }
+    printf("%d %.5f",sum,(double)sum/n);    
 
-    cout << s << endl;
-    
     return 0;
 }
 ~~~

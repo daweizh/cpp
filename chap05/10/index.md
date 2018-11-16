@@ -1,4 +1,4 @@
-# A04.10 有一门课不及格的学生
+# A05.10 满足条件的数累加
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,15 +11,16 @@
 using namespace std;
 
 int main(){
-    int c1,c2;
+    int m,n,sum=0;
 
-    cin >> c1 >> c2;
+    cin >> m >> n;
+    for (int i=m;i<=n;i++){
+        if(i%17==0){
+            sum = sum + i;
+        }
+    }
+    printf("%d",sum);
 
-    string s = "0";
-    if ((c1<60 && c2>=60 )|| (c1>=60 && c2 <60))
-        s = "1";
-    cout << s << endl;
-    
     return 0;
 }
 ~~~

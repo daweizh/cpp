@@ -2,17 +2,15 @@
 using namespace std;
 
 int main(){
-    int n;
+    int n,a;
+    double sum = 0;
 
     cin >> n;
-
-    string s = "positive";
-    if (n ==0)
-        s = "zero";
-    else if (n<0)
-        s = "negative";
-
-    cout << s << endl;
-            
+    for (int i=0;i<n;i++){
+        cin >> a;
+        sum = sum + a;  
+    }
+    printf("%.2f",sum/n);
+    
     return 0;
 }

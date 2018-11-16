@@ -2,27 +2,15 @@
 using namespace std;
 
 int main(){
-    int n;
+    int m,n,sum=0;
 
-    cin >> n;
+    cin >> m >> n;
+    for (int i=m;i<=n;i++){
+        if(i%2==1){
+            sum = sum + i;
+        }
+    }
+    printf("%d",sum);
 
-    string s = "n";
-    if (n % 3==0 && n % 5==0 && n % 7==0)
-        s = "3 5 7";
-    else if (n % 3==0 && n % 5==0)
-        s = "3 5";
-    else if (n % 3==0 && n % 7==0)
-        s = "3 7";
-    else if (n % 5==0 && n % 7==0)
-        s = "5 7";
-    else if (n % 3==0)
-        s = "3";
-    else if (n % 5==0)
-        s = "5";
-    else if (n % 7==0)
-        s = "7";
-
-    cout << s << endl;
-    
     return 0;
 }

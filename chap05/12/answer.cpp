@@ -2,17 +2,16 @@
 using namespace std;
 
 int main(){
-    double m;
+    int N,m,a,sum=0;
 
-    cin >> m;
-    string s = "All";
-    double bikeTime = m / 3.0 + 50;
-    double walkTime = m / 1.2;
-    if ( bikeTime < walkTime )
-        s = "Bike";
-    else if (bikeTime > walkTime)
-        s = "Walk";
-    cout << s << endl;
-    
+    cin >> N >> m;
+    for (int i=0;i<N;i++){
+        cin >> a;
+        if(a==m){
+            sum = sum + 1;
+        }
+    }
+    cout << sum << endl;    
+
     return 0;
 }

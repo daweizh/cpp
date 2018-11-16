@@ -2,13 +2,14 @@
 using namespace std;
 
 int main(){
-    char c=getchar();
+    int n,a,sum = 0;
 
-    string s = "NO";
-    if (c%2==1)
-        s = "YES";
+    cin >> n;
+    for (int i=0;i<n;i++){
+        cin >> a;
+        sum = sum + a;  
+    }
+    printf("%d %.5f",sum,(double)sum/n);    
 
-    cout << s << endl;
-    
     return 0;
 }

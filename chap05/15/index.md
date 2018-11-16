@@ -1,10 +1,10 @@
-# A04.15 最大数输出
+# A05.15 银行利息
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## a. 参考代码
+## a1. 参考代码
 
 ~~~cpp
 #include <iostream>
@@ -12,20 +12,34 @@
 using namespace std;
 
 int main(){
-    int x,y,z;
+    double R,M,Y;
+    
+    cin >> R >> M >> Y;
+    int w = M * pow((1+R/100),Y);
+    printf("%d",w);
+    
+    return 0;
+} 
+~~~
 
-    cin >> x >> y >>z;
-    int max = x;
-    if (y > max)
-        max = y;
-    if (z>max)
-        max = z;
-    printf("%d",max);
+## a2. 参考代码
+
+~~~cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    double R,M,Y;
+    
+    cin >> R >> M >> Y;
+    for (int i=0;i<Y;i++){
+        M = M * (1 + R/100);
+    }
+    printf("%d",(int)M);
     
     return 0;
 }
 ~~~
-
 
 ## w. 微信订阅号
 

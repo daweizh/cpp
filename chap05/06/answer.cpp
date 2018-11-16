@@ -2,16 +2,19 @@
 using namespace std;
 
 int main(){
-    int i;
+    int n,a,max = 0,min=10000;
 
-    cin >> i;
+    cin >> n;
+    for (int i=0;i<n;i++){
+        cin >> a;
+        if (a>max){
+            max = a;
+        }
+        if(a<min){
+            min = a;
+        }
+    }
+    printf("%d",max-min);   
 
-    if (i>=10 && i<=99)
-        i = 1;
-    else
-        i = 0;      
-
-    cout << i << endl;
-    
     return 0;
 }

@@ -1,4 +1,4 @@
-# A04.06 判断是否为两位数
+# A05.06 整数序列的元素最大跨度值
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,17 +11,20 @@
 using namespace std;
 
 int main(){
-    int i;
+    int n,a,max = 0,min=10000;
 
-    cin >> i;
+    cin >> n;
+    for (int i=0;i<n;i++){
+        cin >> a;
+        if (a>max){
+            max = a;
+        }
+        if(a<min){
+            min = a;
+        }
+    }
+    printf("%d",max-min);   
 
-    if (i>=10 && i<=99)
-        i = 1;
-    else
-        i = 0;      
-
-    cout << i << endl;
-    
     return 0;
 }
 ~~~

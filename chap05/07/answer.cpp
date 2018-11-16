@@ -2,16 +2,16 @@
 using namespace std;
 
 int main(){
-    int x,y,z;
+    int n,g,s,c,sg=0,ss=0,sc=0;
 
-    cin >> x >> y;
+    cin >> n;
+    for (int i=0;i<n;i++){
+        cin >> g >> s >> c;
+        sg = sg + g;
+        ss = ss + s;
+        sc = sc + c; 
+    }
+    printf("%d %d %d %d",sg,ss,sc,sg+ss+sc);
 
-    if (x>=10 || y >= 20)
-        z = 1;
-    else
-        z = 0;      
-
-    cout << z << endl;
-    
     return 0;
 }

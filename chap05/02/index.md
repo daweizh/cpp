@@ -1,4 +1,4 @@
-# A04.02 输出绝对值
+# A05.02 财务管理 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -11,15 +11,15 @@
 using namespace std;
 
 int main(){
-    double n;
+    double a;
+    double sum = 0;
 
-    cin >> n;
+    for (int i=0;i<12;i++){
+        cin >> a;
+        sum = sum + a;  
+    }
+    printf("$%.2f",sum/12); 
 
-    if (n<0)
-        n = -n;
-
-    printf("%.2f",n);
-    
     return 0;
 }
 ~~~

@@ -1,10 +1,29 @@
-# A04.14 计算邮资
+# A005.14 人口增长问题 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## a. 参考代码
+## a1. 参考代码
+
+~~~cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    double x,n;
+
+    cin >> x >> n;
+    for(int i=0;i<n;i++){
+        x = x * (1+0.001);
+    }
+    printf("%.4f",x);
+            
+    return 0;
+}
+~~~
+
+## a2. 参考代码
 
 ~~~cpp
 #include <iostream>
@@ -12,23 +31,14 @@
 using namespace std;
 
 int main(){
-    double w;
-    char c;
-    int f;
+    double x,n;
 
-    cin >> w >> c;
-    if (w <= 1000)
-        f = 8;
-    else
-        f = ceil((w-1000)/500)*4 + 8;
-    if (c=='y')
-        f = f + 5;
-    printf("%d",f);
-    
+    cin >> x >> n;
+    printf("%.4f",x*pow((1+0.001),n));
+
     return 0;
 }
 ~~~
-
 
 ## w. 微信订阅号
 

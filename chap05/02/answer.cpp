@@ -2,14 +2,14 @@
 using namespace std;
 
 int main(){
-    double n;
+    double a;
+    double sum = 0;
 
-    cin >> n;
+    for (int i=0;i<12;i++){
+        cin >> a;
+        sum = sum + a;  
+    }
+    printf("$%.2f",sum/12); 
 
-    if (n<0)
-        n = -n;
-
-    printf("%.2f",n);
-    
     return 0;
 }

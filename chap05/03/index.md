@@ -1,4 +1,4 @@
-# A04.03 奇偶数判断
+# A05.03 均值 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -12,15 +12,16 @@ using namespace std;
 
 int main(){
     int n;
-
-    cin >> n;
-
-    string s = "even";
-    if (n%2==1)
-        s = "odd";
-
-    cout << s << endl;
+    double a;
+    double sum = 0;
     
+    cin >> n;
+    for (int i=0;i<n;i++){
+        cin >> a;
+        sum = sum + a;  
+    }
+    printf("%.4f",sum/n);   
+
     return 0;
 }
 ~~~
