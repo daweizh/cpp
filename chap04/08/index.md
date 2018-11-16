@@ -1,38 +1,21 @@
-# A03.07 计算多项式的值 
+# A03.08 温度表达转化
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## a1. 参考代码
+## a. 参考代码
 
 ~~~cpp
 #include <iostream>
 #include<iomanip>
-#include <cmath>
 using namespace std;
 
 int main() {
-    double a,b,c,d,x;
+    double f;
 
-    cin >> x >>a >> b >>c >> d  ;
-    cout  << fixed << setprecision(7) << a* pow(x,3) + b* pow(x,2) + c* x + d << endl;
-
-    return 0;
-}
-~~~
-
-## a2. 参考代码
-
-~~~cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    double a,b,c,d,x;
-
-    cin >> x >>a >> b >>c >> d ;
-    printf("%.7f",a*x*x*x+b*x*x+c*x+d);
+    cin >> f ;
+    cout  << fixed << setprecision(5) << 5 * (f-32)/9 << endl;
 
     return 0;
 }
