@@ -1,4 +1,4 @@
-# Q03.10 Hello, World!的大小
+# Q02.10 Hello, World!的大小
 
 总时间限制: 1000ms 内存限制: 65536kB
 

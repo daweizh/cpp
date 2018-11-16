@@ -1,4 +1,4 @@
-# Q02.01 Hello, World!
+# Q01.01 Hello, World!
 
 总时间限制: 1000ms 内存限制: 65536kB   
 
