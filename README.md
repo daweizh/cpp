@@ -8,6 +8,15 @@
 - 第05章 [循环控制](chap05/index.md)
 - 第12章 [函数与过程抽象](chap12/index.md)
 
+## u. 相关链接
+
+1. [H5计算机应用能力培养=>https://daweizh.github.io/h5/](https://daweizh.github.io/h5/)
+2. [CPP编程基础=>https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/)
+3. [NOIP真题训练营=>https://daweizh.github.io/noip/](https://daweizh.github.io/noip/)
+4. [Everyday English=>https://daweizh.github.io/ee/](https://daweizh.github.io/ee/)
+
+----------
+
 ## w.微信订阅号
 
 1. 智数精英-关注中小学程序设计及相关讨论
