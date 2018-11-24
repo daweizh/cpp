@@ -1,31 +1,31 @@
-# A07.01 统计数字字符个数
+# Q07.01 统计数字字符个数
 
-- 张大为 QQ:1243605845 @大连
-- 辽宁师范大学计算机与信息技术学院
-- [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
+总时间限制: 1000ms 内存限制: 65536kB
 
-## a. 参考代码
+## 描述
 
-~~~
-#include <iostream>
-#include <cstring>
-using namespace std;
+输入一行字符，统计出其中数字字符的个数。
 
-int main(){
-    char cs[300];
-    
-    cin.getline(cs,300);
-    int len = strlen(cs);
-    
-    int sum = 0;
-    for(int i=0;i<len;i++)
-        if(cs[i]>='0' && cs[i]<='9')
-            sum = sum + 1;
-    cout << sum << endl;
-    
-    return 0;
-}
-~~~
+## 输入
+
+一行字符串，总长度不超过255。
+
+## 输出
+
+输出为1行，输出字符串里面数字字符的个数。
+
+## 样例输入
+
+    Peking University is set up at 1898.
+
+## 样例输出
+
+    4
+
+## 来源
+
+习题(7-1) 医学部 2010 期末试题 樊波
+
 
 ## u. 相关链接
 
@@ -52,4 +52,3 @@ int main(){
     
 ## h. [首页](../../)
 
- 

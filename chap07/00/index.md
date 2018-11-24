@@ -1,28 +1,59 @@
-# A07.01 统计数字字符个数
+# Chap07. 需要了解的
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
 - [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
 
-## a. 参考代码
+## 7.1 子串读入方法总结
 
 ~~~
 #include <iostream>
-#include <cstring>
+#include <cstdio>
+#include <string>
 using namespace std;
 
+char ch;
+char cs[100];
+string str;
+
 int main(){
-    char cs[300];
+    //freopen("data.in","r",stdin);
     
-    cin.getline(cs,300);
-    int len = strlen(cs);
+    //while((ch=getchar())!=EOF)
+    //    putchar(ch);               
     
-    int sum = 0;
-    for(int i=0;i<len;i++)
-        if(cs[i]>='0' && cs[i]<='9')
-            sum = sum + 1;
-    cout << sum << endl;
+    //while(gets(cs)>0)
+    //    puts(cs);
     
+    //while(scanf("%c",&ch)>0)
+    //  printf("%c",ch);
+    
+    //while(scanf("%s",cs)>0)
+    //    printf("%s\n",cs);
+    
+    //while(cin >> ch)
+    //   cout << ch << endl;
+
+    //while(cin >> cs)
+    //   cout << cs << endl;
+
+    //while((ch=cin.get())!=EOF)
+    //    cout << ch << endl;
+ 
+    //while(cin.getline(cs,100)>0)
+    //    cout << cs << endl;
+
+    
+    //while(cin>>str)
+    //    cout << str << "\t length=" << str.size() << endl;
+ 
+    //while(getline(cin,str))
+    //    cout << str << "\t length=" << str.size() << endl;
+        
+    getline(cin,str);
+       cout << str.find("hello") << endl;        
+                    
+    //fclose(stdin);
     return 0;
 }
 ~~~

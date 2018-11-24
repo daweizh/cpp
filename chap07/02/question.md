@@ -1,31 +1,26 @@
-# A07.01 统计数字字符个数
+# Q07.02 找第一个只出现一次的字符
 
-- 张大为 QQ:1243605845 @大连
-- 辽宁师范大学计算机与信息技术学院
-- [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
+总时间限制: 1000ms 内存限制: 65536kB
 
-## a. 参考代码
+## 描述
 
-~~~
-#include <iostream>
-#include <cstring>
-using namespace std;
+给定一个只包含小写字母的字符串，请你找到第一个仅出现一次的字符。如果没有，输出no。
 
-int main(){
-    char cs[300];
-    
-    cin.getline(cs,300);
-    int len = strlen(cs);
-    
-    int sum = 0;
-    for(int i=0;i<len;i++)
-        if(cs[i]>='0' && cs[i]<='9')
-            sum = sum + 1;
-    cout << sum << endl;
-    
-    return 0;
-}
-~~~
+## 输入
+
+一个字符串，长度小于100000。
+
+## 输出
+
+输出第一个仅出现一次的字符，若没有则输出no。
+
+## 样例输入
+
+    abcabd
+
+## 样例输出
+
+    c
 
 ## u. 相关链接
 
@@ -52,4 +47,3 @@ int main(){
     
 ## h. [首页](../../)
 
- 

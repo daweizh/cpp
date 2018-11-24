@@ -1,4 +1,4 @@
-# A07.01 统计数字字符个数
+# A07.02 找第一个只出现一次的字符 
 
 - 张大为 QQ:1243605845 @大连
 - 辽宁师范大学计算机与信息技术学院
@@ -12,17 +12,25 @@
 using namespace std;
 
 int main(){
-    char cs[300];
-    
-    cin.getline(cs,300);
+    int num[30];
+    char cs[100005];
+    gets(cs);
     int len = strlen(cs);
+    for(int i=0;i<len;i++){
+        int c = cs[i]-97;
+        num[c]++;
+    }
     
-    int sum = 0;
-    for(int i=0;i<len;i++)
-        if(cs[i]>='0' && cs[i]<='9')
-            sum = sum + 1;
-    cout << sum << endl;
-    
+    int i=0;
+    for(;i<len;i++){
+        if(num[cs[i]-97]==1){
+            cout << cs[i] << endl;
+            break;
+        }
+    }
+    if(i==len)
+        cout << "no" << endl;
+
     return 0;
 }
 ~~~
