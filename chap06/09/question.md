@@ -1,45 +1,37 @@
-# A06.07 有趣的跳跃
+# Q06.09 向量点积计算
 
-- 张大为 QQ:1243605845 @大连
-- 辽宁师范大学计算机与信息技术学院
-- [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
+总时间限制: 1000ms 内存限制: 65536kB
 
-## a. 参考代码
+## 描述
+   
+在线性代数、计算几何中，向量点积是一种十分重要的运算。  
+给定两个n维向量a=(a<sub>1<\sub>,a<sub>2<\sub>,...,
+a<sub>n<\sub>)和b=(b<sub>1<\sub>,b<sub>2<\sub>,...,b<sub>n<\sub>)，
+求点积a·b=a<sub>1<\sub>b<sub>1<\sub>+a<sub>2b<\sub>2+...+a<sub>n<\sub>b<sub>n<\sub>。  
 
-~~~cpp
-#include<cstdio>  
-#include<iostream>  
-using namespace std; 
- 
-int n,a,b,c;  
-bool v[6000];  
+## 输入
+   
+第一行是一个整数n。1 <= n <= 1000。  
+第二行包含n个整数a<sub>1<\sub>,a<sub>2<\sub>,...,a<sub>n<\sub>。  
+第三行包含n个整数b<sub>1<\sub>,b<sub>2<\sub>,...,b<sub>n<\sub>。  
+相邻整数之间用单个空格隔开。  
+每个整数的绝对值都不超过1000。
 
-int main(){  
-    scanf("%d%d",&n,&a); 
- 
-    for(int i=1;i<n;i++){  
-        scanf("%d",&b);  
-        c=max(a-b,b-a);  
-        if(c>5000){
-            printf("Not jolly\n");  
-            return 0;
-        }  
-        if(v[c]){
-            printf("Not jolly\n");
-            return 0;
-        }  
-        v[c]=1;
-        a=b;  
-    }  
-    for(int i=1;i<n;i++)   
-        if(!v[i]){
-            printf("Not jolly\n");
-            return 0;
-        }  
-    printf("Jolly\n");  
-    return 0;
-}
-~~~
+## 输出
+   
+一个整数，即两个向量的点积结果。
+
+## 样例输入
+  
+    3  
+    1 4 6  
+    2 1 5  
+
+## 样例输出
+  
+    36  
+
+## 数据范围限制
 
 
 ## u. 相关链接
