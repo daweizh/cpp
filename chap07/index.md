@@ -1,4 +1,4 @@
-## 02.变量定义、赋值及转换
+## 07. 字符串
 
 1.  统计数字字符个数[[1](http://noi.openjudge.cn)]
     -[试题](01/question.md)
@@ -10,48 +10,46 @@
     -[题解](02/)
     -[代码](https://github.com/daweizh/cpp/blob/master/chap07/02/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0107/02/)
-<!--
-3.  其他基本数据类型存储空间大小[[1](http://noi.openjudge.cn)]
+3.  基因相关性[[1](http://noi.openjudge.cn)]
     -[试题](03/question.md)
     -[题解](03/)
     -[代码](https://github.com/daweizh/cpp/blob/master/chap07/03/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0107/03/)
-4.  填空：类型转换1[[1](http://noi.openjudge.cn)]
+4.  石头剪子布[[1](http://noi.openjudge.cn)]
     -[试题](04/question.md)
     -[题解](04/)
     -[代码](https://github.com/daweizh/cpp/blob/master/chap07/04/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0107/04/)
-5.  填空：类型转换2[[1](http://noi.openjudge.cn)]
+5.  输出亲朋字符串[[1](http://noi.openjudge.cn)]
     -[试题](05/question.md)
     -[题解](05/)
     -[代码](https://github.com/daweizh/cpp/blob/master/chap07/05/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0107/05/)
-6.  浮点数向零舍入[[1](http://noi.openjudge.cn)]
+6.  合法 C 标识符[[1](http://noi.openjudge.cn)]
     -[试题](06/question.md)
     -[题解](06/)
     -[代码](https://github.com/daweizh/cpp/blob/master/chap07/06/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0107/06/)
-7.  打印ASCII码[[1](http://noi.openjudge.cn)]
+7.  配对碱基链[[1](http://noi.openjudge.cn)]
     -[试题](07/question.md)
     -[题解](07/)
     -[代码](https://github.com/daweizh/cpp/blob/master/chap07/07/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0107/07/)
-8.  打印字符[[1](http://noi.openjudge.cn)]
+8.  字符替换[[1](http://noi.openjudge.cn)]
     -[试题](08/question.md)
     -[题解](08/)
     -[代码](https://github.com/daweizh/cpp/blob/master/chap07/08/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0107/08/)
-9.  整型与布尔型的转换[[1](http://noi.openjudge.cn)]
+9.  密码翻译[[1](http://noi.openjudge.cn)]
     -[试题](09/question.md)
     -[题解](09/)
     -[代码](https://github.com/daweizh/cpp/blob/master/chap07/09/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0107/09/)
-10. Hello, World!的大小[[1](http://noi.openjudge.cn)]
+10. 简单密码[[1](http://noi.openjudge.cn)]
     -[试题](10/question.md)
     -[题解](10/)
     -[代码](https://github.com/daweizh/cpp/blob/master/chap07/10/)
     -[NOI在线提交](http://noi.openjudge.cn/ch0107/10/)
--->
 
 ## s.小结
 
