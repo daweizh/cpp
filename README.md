@@ -6,8 +6,14 @@
 - 第03章 [算术表达式与顺序执行](chap03/index.md)
 - 第04章 [逻辑表达式与条件分支](chap04/index.md)
 - 第05章 [循环控制](chap05/index.md)
+- 第06章 [一维数组](chap06/index.md)
 - 第07章 [字符串](chap07/index.md)
+- 第08章 [多维数组](chap08/index.md)
+- 第09章 [顺序查找](chap09/index.md)
+- 第10章 [简单排序](chap10/index.md)
+- 第11章 [二分查找](chap11/index.md)
 - 第12章 [函数与过程抽象](chap12/index.md)
+- 第13章 [综合应用](chap13/index.md)
 
 ## u. 相关链接
 
