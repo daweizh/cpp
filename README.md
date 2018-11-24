@@ -6,6 +6,7 @@
 - 第03章 [算术表达式与顺序执行](chap03/index.md)
 - 第04章 [逻辑表达式与条件分支](chap04/index.md)
 - 第05章 [循环控制](chap05/index.md)
+- 第07章 [字符串](chap07/index.md)
 - 第12章 [函数与过程抽象](chap12/index.md)
 
 ## u. 相关链接
