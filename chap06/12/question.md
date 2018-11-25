@@ -1,44 +1,30 @@
-# A06.12 计算2的N次方
+# Q06.12 计算2的N次方
 
-- 张大为 QQ:1243605845 @大连
-- 辽宁师范大学计算机与信息技术学院
-- [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
+总时间限制: 1000ms 内存限制: 65536kB
 
-## a. 参考代码
+## 描述
 
-~~~cpp
-#include <iostream>
-using namespace std;
+任意给定一个正整数N(N<=100)，计算2的n次方的值。
 
-int ans[100];
+## 输入
 
-int main(){
-    int n,i,m=1;
-    cin >> n;
-    ans[0]=1;
-    while(n--){
-        int more =0;
-        i=0;
-        for(;i<m;i++){
-            int temp = ans[i] * 2 + more;
-            ans[i]=temp % 10;
-            more = temp / 10;
-        }
-        if(more){
-            ans[i]=more;
-            m++;
-        }   
-    }
+输入一个正整数N。
+
+## 输出
+
+输出2的N次方的值。
+
+## 样例输入
+
+    5
     
-    while(!ans[i]) i--;
-    for(int t=i;t>=0;t--){
-        cout << ans[t];
-    }
-    cout << endl;
+## 样例输出
+
+    32
     
-    return 0;
-}
-~~~
+## 提示
+
+高精度计算
 
 
 ## u. 相关链接
