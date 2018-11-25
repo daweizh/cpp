@@ -1,43 +1,28 @@
-# A06.13 大整数的因子 
+# Q06.13 大整数的因子
 
-- 张大为 QQ:1243605845 @大连
-- 辽宁师范大学计算机与信息技术学院
-- [https://daweizh.github.io/cpp/](https://daweizh.github.io/cpp/) 
+总时间限制: 1000ms 内存限制: 65536kB
 
-## a. 参考代码
+## 描述
 
-~~~cpp
-#include <iostream>
-#include <cstring>
-using namespace std;
+已知正整数k满足2<=k<=9，现给出长度最大为30位的十进制非负整数c，求所有能整除c的k。
 
-int n[100];
-char c[100];
+## 输入
 
-int main(){
-    int flag = 1;
-    gets(c);
+一个非负整数c，c的位数<=30。
 
-    int len = strlen(c);
-    for(int i=0;i<len;i++) 
-        n[i] = c[i]-'0';
+## 输出
 
-    for(int k=2;k<=9;k++){
-        int r = 0;
-        for(int i=0;i<len;i++){
-            r = (n[i] +r*10) % k; 
-        }
-        if(r==0){
-           cout << k << " ";
-           flag = 0;
-        }
-    }       
-    if(flag) cout << "none" << endl;
-    else cout << endl;
-        
-    return 0;
-}
-~~~
+若存在满足 c%k == 0 的k，
+从小到大输出所有这样的k，相邻两个数之间用单个空格隔开；
+若没有这样的k，则输出"none"。
+
+## 样例输入
+
+    30
+
+## 样例输出
+
+    2 3 5 6 
 
 
 ## u. 相关链接
