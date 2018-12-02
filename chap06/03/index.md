@@ -34,10 +34,10 @@ int main(){
 3. NOIP真题训练营
 4. Everyday English
 
-![H5计算机应用能力培养](../../assets/me/img/h5.png)
-![CPP编程基础](../../assets/me/img/cpp.png)
-![NOIP真题训练营](../../assets/me/img/noip.png)
-![Everyday English](../../assets/me/img/ee.png)
+![H5计算机应用能力培养](../../assets/me/img/h52.png)
+![CPP编程基础](../../assets/me/img/cpp2.png)
+![NOIP真题训练营](../../assets/me/img/noip2.png)
+![Everyday English](../../assets/me/img/ee2.png)
 
 
 ----------
