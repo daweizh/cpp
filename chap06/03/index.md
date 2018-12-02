@@ -48,9 +48,9 @@ int main(){
 2. 随话录-记录小朋友们的成长时光
 3. 西山征途-关注大学生成长、学习和生活
 
-![欢迎关注“智数精英”订阅号](../../assets/me/img/idea_130.jpg)
-![欢迎关注“随话录”订阅号](../../assets/me/img/shl_130.jpg)
-![欢迎关注“西山征途”订阅号](../../assets/me/img/xszt_130.jpg)
+![欢迎关注“智数精英”订阅号](../../assets/me/img/idea8.jpg)
+![欢迎关注“随话录”订阅号](../../assets/me/img/shl8.jpg)
+![欢迎关注“西山征途”订阅号](../../assets/me/img/xszt8.jpg)
 
 ----------
 
